@@ -46,24 +46,40 @@ export default function PortfolioGallery() {
             >
               {cat.label}
             </button>
-          ))}        </div>
+          ))}
+        </div>
 
-        {/* Masonry Grid - Seamless Flow */}
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 auto-rows-max">
+        {/* Masonry Grid - Dynamic Layout */}
+        <div 
+          style={{
+            display: 'grid',
+            gridTemplateColumns: 'repeat(auto-fill, minmax(250px, 1fr))',
+            gap: '1.5rem',
+            gridAutoRows: '250px',
+            gridAutoFlow: 'dense'
+          }}
+        >
           {filteredItems.map((item, index) => (
             <div
               key={item.id}
-              className={`rounded-lg overflow-hidden transition-all duration-300 group cursor-pointer ${
-                item.featured ? 'lg:col-span-2 lg:row-span-1' : ''
-              }`}
               style={{
-                backgroundColor: '#1C1C1E',
+                gridColumn: item.featured ? 'span 2' : 'span 1',
+                gridRow: item.featured ? 'span 1' : 'span 1',
                 animation: `fadeInUp 0.6s ease-out ${index * 0.05}s both`
+              }}
+              className="rounded-lg overflow-hidden transition-all duration-300 group cursor-pointer"
+              onMouseEnter={(e) => {
+                const el = e.currentTarget as HTMLElement;
+                el.style.transform = 'scale(1.02)';
+              }}
+              onMouseLeave={(e) => {
+                const el = e.currentTarget as HTMLElement;
+                el.style.transform = 'scale(1)';
               }}
             >
               {/* Image Container */}
               <div 
-                className={`relative overflow-hidden ${item.featured ? 'aspect-video' : 'aspect-square'}`} 
+                className="relative overflow-hidden w-full h-full" 
                 style={{ backgroundColor: '#1C1C1E' }}
               >
                 <img
@@ -78,11 +94,11 @@ export default function PortfolioGallery() {
                 />
                 
                 {/* Overlay on Hover */}
-                <div className="absolute inset-0 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex flex-col justify-end p-4" style={{ background: 'linear-gradient(to top, rgba(10, 10, 10, 0.8), transparent)' }}>
-                  <h3 className="text-white text-lg tracking-wider" style={{ fontFamily: "'Inter', system-ui, -apple-system, sans-serif", fontWeight: 600 }}>
+                <div className="absolute inset-0 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex flex-col justify-end p-4" style={{ background: 'linear-gradient(to top, rgba(10, 10, 10, 0.9), rgba(10, 10, 10, 0.4), transparent)' }}>
+                  <h3 className="text-white text-sm md:text-base tracking-wider" style={{ fontFamily: "'Inter', system-ui, -apple-system, sans-serif", fontWeight: 600 }}>
                     {item.title}
                   </h3>
-                  <p className="text-sm" style={{ color: '#F59E0B', fontFamily: "'Inter', system-ui, -apple-system, sans-serif", fontWeight: 500 }}>
+                  <p className="text-xs md:text-sm" style={{ color: '#F59E0B', fontFamily: "'Inter', system-ui, -apple-system, sans-serif", fontWeight: 500 }}>
                     {getCategoryLabel(item.category)}
                   </p>
                 </div>
@@ -114,6 +130,20 @@ export default function PortfolioGallery() {
           to {
             opacity: 1;
             transform: translateY(0);
+          }
+        }
+
+        @media (max-width: 768px) {
+          [style*="grid-template-columns"] {
+            grid-template-columns: repeat(auto-fill, minmax(150px, 1fr)) !important;
+            grid-auto-rows: 150px !important;
+          }
+        }
+
+        @media (max-width: 480px) {
+          [style*="grid-template-columns"] {
+            grid-template-columns: repeat(auto-fill, minmax(120px, 1fr)) !important;
+            grid-auto-rows: 120px !important;
           }
         }
       `}</style>
