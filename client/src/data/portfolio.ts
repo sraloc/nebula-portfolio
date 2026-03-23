@@ -16,16 +16,14 @@ export const portfolioItems: PortfolioItem[] = [
     title: 'VERTE ENCIMA 1',
     category: 'stills',
     image: 'https://d2xsxph8kpxj0f.cloudfront.net/310519663468761794/e8xfFyW6dXJEFGQgKJqfmX/VERTE ENCIMA 1_ec811bb6.webp',
-    alt: 'Still from VERTE ENCIMA videoclip - Scene 1',
-    rotation: 90
+    alt: 'Still from VERTE ENCIMA videoclip - Scene 1'
   },
   {
     id: 'still-2',
     title: 'VERTE ENCIMA 2',
     category: 'stills',
     image: 'https://d2xsxph8kpxj0f.cloudfront.net/310519663468761794/e8xfFyW6dXJEFGQgKJqfmX/VERTE ENCIMA 2_0e5c4b40.webp',
-    alt: 'Still from VERTE ENCIMA videoclip - Scene 2',
-    rotation: 90
+    alt: 'Still from VERTE ENCIMA videoclip - Scene 2'
   },
   {
     id: 'still-3',
@@ -33,7 +31,6 @@ export const portfolioItems: PortfolioItem[] = [
     category: 'stills',
     image: 'https://d2xsxph8kpxj0f.cloudfront.net/310519663468761794/e8xfFyW6dXJEFGQgKJqfmX/VERTE ENCIMA 3_1d21eb61.webp',
     alt: 'Still from VERTE ENCIMA videoclip - Scene 3',
-    rotation: 90,
     featured: true
   },
   {
@@ -41,40 +38,35 @@ export const portfolioItems: PortfolioItem[] = [
     title: 'VERTE ENCIMA 4',
     category: 'stills',
     image: 'https://d2xsxph8kpxj0f.cloudfront.net/310519663468761794/e8xfFyW6dXJEFGQgKJqfmX/VERTE ENCIMA 4_40b8287e.webp',
-    alt: 'Still from VERTE ENCIMA videoclip - Scene 4',
-    rotation: 90
+    alt: 'Still from VERTE ENCIMA videoclip - Scene 4'
   },
   {
     id: 'still-5',
     title: 'Volver pa atrás 1',
     category: 'stills',
     image: 'https://d2xsxph8kpxj0f.cloudfront.net/310519663468761794/e8xfFyW6dXJEFGQgKJqfmX/Volver pa atras 1_04399d1f.webp',
-    alt: 'Still from Volver pa atrás videoclip - Scene 1',
-    rotation: 90
+    alt: 'Still from Volver pa atrás videoclip - Scene 1'
   },
   {
     id: 'still-6',
     title: 'Volver pa atrás 2',
     category: 'stills',
     image: 'https://d2xsxph8kpxj0f.cloudfront.net/310519663468761794/e8xfFyW6dXJEFGQgKJqfmX/Volver pa atras 2_9bce6061.webp',
-    alt: 'Still from Volver pa atrás videoclip - Scene 2',
-    rotation: 90
+    alt: 'Still from Volver pa atrás videoclip - Scene 2'
   },
   {
     id: 'still-7',
     title: 'Volver pa atrás 3',
     category: 'stills',
     image: 'https://d2xsxph8kpxj0f.cloudfront.net/310519663468761794/e8xfFyW6dXJEFGQgKJqfmX/Volver pa atras 3_b189b622.webp',
-    alt: 'Still from Volver pa atrás videoclip - Scene 3',
-    rotation: 90
+    alt: 'Still from Volver pa atrás videoclip - Scene 3'
   },
   {
     id: 'still-8',
     title: 'Volver pa atrás 4',
     category: 'stills',
     image: 'https://d2xsxph8kpxj0f.cloudfront.net/310519663468761794/e8xfFyW6dXJEFGQgKJqfmX/Volver pa atras 4_3ef4a440.webp',
-    alt: 'Still from Volver pa atrás videoclip - Scene 4',
-    rotation: 90
+    alt: 'Still from Volver pa atrás videoclip - Scene 4'
   },
   // FOTOGRAFÍA - Photography
   {
@@ -90,24 +82,21 @@ export const portfolioItems: PortfolioItem[] = [
     title: 'DJ LA FERIA 2',
     category: 'fotografia',
     image: 'https://d2xsxph8kpxj0f.cloudfront.net/310519663468761794/e8xfFyW6dXJEFGQgKJqfmX/DJ LA FERIA 2_e825276c.webp',
-    alt: 'Photography session - DJ LA FERIA 2',
-    rotation: 90
+    alt: 'Photography session - DJ LA FERIA 2'
   },
   {
     id: 'photo-3',
     title: 'Paulito en vivo',
     category: 'fotografia',
     image: 'https://d2xsxph8kpxj0f.cloudfront.net/310519663468761794/e8xfFyW6dXJEFGQgKJqfmX/paulito en vivo_ddb48c0e.webp',
-    alt: 'Live photography - Paulito en vivo',
-    rotation: 90
+    alt: 'Live photography - Paulito en vivo'
   },
   {
     id: 'photo-4',
     title: 'Paulito en vivo 2',
     category: 'fotografia',
     image: 'https://d2xsxph8kpxj0f.cloudfront.net/310519663468761794/e8xfFyW6dXJEFGQgKJqfmX/Paulito en vivo 2_0d8aaa1b.webp',
-    alt: 'Live photography - Paulito en vivo 2',
-    rotation: 90
+    alt: 'Live photography - Paulito en vivo 2'
   },
   {
     id: 'photo-5',
@@ -122,8 +111,7 @@ export const portfolioItems: PortfolioItem[] = [
     title: 'Negro tomando bebida',
     category: 'fotografia',
     image: 'https://d2xsxph8kpxj0f.cloudfront.net/310519663468761794/e8xfFyW6dXJEFGQgKJqfmX/Negro tomando bebida_65b6ed5b.webp',
-    alt: 'Portrait photography - Negro tomando bebida',
-    rotation: 90
+    alt: 'Portrait photography - Negro tomando bebida'
   },
   // MAKE OFF - Behind the scenes
   {
@@ -131,8 +119,7 @@ export const portfolioItems: PortfolioItem[] = [
     title: 'Joaco operando',
     category: 'makeoff',
     image: 'https://d2xsxph8kpxj0f.cloudfront.net/310519663468761794/e8xfFyW6dXJEFGQgKJqfmX/Joaco operando_dfbb62ae.webp',
-    alt: 'Behind the scenes - Joaco operating camera',
-    rotation: 90
+    alt: 'Behind the scenes - Joaco operating camera'
   },
   {
     id: 'makeoff-2',
@@ -147,32 +134,28 @@ export const portfolioItems: PortfolioItem[] = [
     title: 'Titi Russo',
     category: 'makeoff',
     image: 'https://d2xsxph8kpxj0f.cloudfront.net/310519663468761794/e8xfFyW6dXJEFGQgKJqfmX/Titi Russo_f89bbfeb.webp',
-    alt: 'Behind the scenes - Titi Russo',
-    rotation: 90
+    alt: 'Behind the scenes - Titi Russo'
   },
   {
     id: 'makeoff-4',
     title: 'Titi Russo naranja',
     category: 'makeoff',
     image: 'https://d2xsxph8kpxj0f.cloudfront.net/310519663468761794/e8xfFyW6dXJEFGQgKJqfmX/Titi Russo naranja_722034a4.webp',
-    alt: 'Behind the scenes - Titi Russo with orange lighting',
-    rotation: 90
+    alt: 'Behind the scenes - Titi Russo with orange lighting'
   },
   {
     id: 'makeoff-5',
     title: 'Tobar operando',
     category: 'makeoff',
     image: 'https://d2xsxph8kpxj0f.cloudfront.net/310519663468761794/e8xfFyW6dXJEFGQgKJqfmX/Tobar operando_f99335b2.webp',
-    alt: 'Behind the scenes - Tobar operating equipment',
-    rotation: 90
+    alt: 'Behind the scenes - Tobar operating equipment'
   },
   {
     id: 'makeoff-6',
     title: 'Set shot',
     category: 'makeoff',
     image: 'https://d2xsxph8kpxj0f.cloudfront.net/310519663468761794/e8xfFyW6dXJEFGQgKJqfmX/_DSC4097_6723706e.webp',
-    alt: 'Behind the scenes - Production set',
-    rotation: 90
+    alt: 'Behind the scenes - Production set'
   }
 ];
 
