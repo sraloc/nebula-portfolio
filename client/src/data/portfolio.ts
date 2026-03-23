@@ -5,6 +5,8 @@ export interface PortfolioItem {
   category: 'stills' | 'fotografia' | 'makeoff';
   image: string;
   alt: string;
+  rotation?: number; // Rotation in degrees (0, 90, 180, 270)
+  featured?: boolean; // If true, item spans 2 columns
 }
 
 export const portfolioItems: PortfolioItem[] = [
@@ -28,7 +30,9 @@ export const portfolioItems: PortfolioItem[] = [
     title: 'VERTE ENCIMA 3',
     category: 'stills',
     image: 'https://d2xsxph8kpxj0f.cloudfront.net/310519663468761794/e8xfFyW6dXJEFGQgKJqfmX/VERTE ENCIMA 3_1d21eb61.webp',
-    alt: 'Still from VERTE ENCIMA videoclip - Scene 3'
+    alt: 'Still from VERTE ENCIMA videoclip - Scene 3',
+    rotation: 90,
+    featured: true
   },
   {
     id: 'still-4',
@@ -42,7 +46,8 @@ export const portfolioItems: PortfolioItem[] = [
     title: 'Volver pa atrás 1',
     category: 'stills',
     image: 'https://d2xsxph8kpxj0f.cloudfront.net/310519663468761794/e8xfFyW6dXJEFGQgKJqfmX/Volver pa atras 1_04399d1f.webp',
-    alt: 'Still from Volver pa atrás videoclip - Scene 1'
+    alt: 'Still from Volver pa atrás videoclip - Scene 1',
+    rotation: 90
   },
   {
     id: 'still-6',
@@ -71,7 +76,8 @@ export const portfolioItems: PortfolioItem[] = [
     title: 'DJ LA FERIA',
     category: 'fotografia',
     image: 'https://d2xsxph8kpxj0f.cloudfront.net/310519663468761794/e8xfFyW6dXJEFGQgKJqfmX/DJ LA FERIA_ab8746ef.webp',
-    alt: 'Photography session - DJ LA FERIA'
+    alt: 'Photography session - DJ LA FERIA',
+    featured: true
   },
   {
     id: 'photo-2',
@@ -85,7 +91,8 @@ export const portfolioItems: PortfolioItem[] = [
     title: 'Paulito en vivo',
     category: 'fotografia',
     image: 'https://d2xsxph8kpxj0f.cloudfront.net/310519663468761794/e8xfFyW6dXJEFGQgKJqfmX/paulito en vivo_ddb48c0e.webp',
-    alt: 'Live photography - Paulito en vivo'
+    alt: 'Live photography - Paulito en vivo',
+    rotation: 90
   },
   {
     id: 'photo-4',
@@ -99,7 +106,8 @@ export const portfolioItems: PortfolioItem[] = [
     title: 'Modelaje',
     category: 'fotografia',
     image: 'https://d2xsxph8kpxj0f.cloudfront.net/310519663468761794/e8xfFyW6dXJEFGQgKJqfmX/Modelaje_d00b8a52.webp',
-    alt: 'Fashion photography - Modelaje'
+    alt: 'Fashion photography - Modelaje',
+    featured: true
   },
   {
     id: 'photo-6',
@@ -121,7 +129,8 @@ export const portfolioItems: PortfolioItem[] = [
     title: 'Logo espalda',
     category: 'makeoff',
     image: 'https://d2xsxph8kpxj0f.cloudfront.net/310519663468761794/e8xfFyW6dXJEFGQgKJqfmX/Logo espalda_12370b8c.webp',
-    alt: 'Behind the scenes - Team with logo'
+    alt: 'Behind the scenes - Team with logo',
+    featured: true
   },
   {
     id: 'makeoff-3',
@@ -135,7 +144,8 @@ export const portfolioItems: PortfolioItem[] = [
     title: 'Titi Russo naranja',
     category: 'makeoff',
     image: 'https://d2xsxph8kpxj0f.cloudfront.net/310519663468761794/e8xfFyW6dXJEFGQgKJqfmX/Titi Russo naranja_722034a4.webp',
-    alt: 'Behind the scenes - Titi Russo with orange lighting'
+    alt: 'Behind the scenes - Titi Russo with orange lighting',
+    rotation: 90
   },
   {
     id: 'makeoff-5',

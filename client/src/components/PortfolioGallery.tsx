@@ -1,34 +1,21 @@
-import { useState, useMemo } from 'react';
+'use client';
+
+import { useState } from 'react';
 import { portfolioItems, getCategoryLabel } from '@/data/portfolio';
 
-/**
- * PortfolioGallery Component
- * 
- * Design Philosophy: Nebula Cinemática
- * - Dark, immersive aesthetic with magenta accents
- * - Masonry layout that flows naturally across three categories
- * - Smooth transitions and hover effects for interactivity
- * - No visible separations between sections - seamless flow
- */
-
-type Category = 'stills' | 'fotografia' | 'makeoff' | 'all';
-
 export default function PortfolioGallery() {
-  const [activeCategory, setActiveCategory] = useState<Category>('all');
+  const [activeCategory, setActiveCategory] = useState('all');
 
-  const filteredItems = useMemo(() => {
-    if (activeCategory === 'all') {
-      return portfolioItems;
-    }
-    return portfolioItems.filter(item => item.category === activeCategory);
-  }, [activeCategory]);
-
-  const categories: { id: Category; label: string }[] = [
+  const categories = [
     { id: 'all', label: 'Todos' },
     { id: 'stills', label: 'Stills' },
     { id: 'fotografia', label: 'Fotografía' },
     { id: 'makeoff', label: 'Make Off' }
   ];
+
+  const filteredItems = activeCategory === 'all'
+    ? portfolioItems
+    : portfolioItems.filter(item => item.category === activeCategory);
 
   return (
     <div className="min-h-screen py-20" style={{ backgroundColor: '#0A0A0A' }}>
@@ -62,13 +49,12 @@ export default function PortfolioGallery() {
           ))}        </div>
 
         {/* Masonry Grid - Seamless Flow */}
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 auto-rows-max">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 auto-rows-max">
           {filteredItems.map((item, index) => (
             <div
               key={item.id}
               className={`rounded-lg overflow-hidden transition-all duration-300 group cursor-pointer ${
-                // Create visual rhythm with varied heights
-                index % 7 === 0 || index % 7 === 4 ? 'lg:col-span-1 lg:row-span-2' : ''
+                item.featured ? 'lg:col-span-2 lg:row-span-1' : ''
               }`}
               style={{
                 backgroundColor: '#1C1C1E',
@@ -76,12 +62,19 @@ export default function PortfolioGallery() {
               }}
             >
               {/* Image Container */}
-              <div className="relative overflow-hidden aspect-square" style={{ backgroundColor: '#1C1C1E' }}>
+              <div 
+                className={`relative overflow-hidden ${item.featured ? 'aspect-video' : 'aspect-square'}`} 
+                style={{ backgroundColor: '#1C1C1E' }}
+              >
                 <img
                   src={item.image}
                   alt={item.alt}
                   loading="lazy"
                   className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500"
+                  style={{
+                    transform: item.rotation ? `rotate(${item.rotation}deg)` : 'rotate(0deg)',
+                    transformOrigin: 'center'
+                  }}
                 />
                 
                 {/* Overlay on Hover */}
