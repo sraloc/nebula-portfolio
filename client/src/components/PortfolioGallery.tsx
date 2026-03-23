@@ -35,9 +35,9 @@ export default function PortfolioGallery() {
       <div className="container mx-auto px-4">
         {/* Header */}
         <div className="mb-16">
-          <h1 className="text-4xl md:text-5xl text-white mb-12 tracking-widest" style={{ fontFamily: "'Bebas Neue', sans-serif" }}>Nuestro Portafolio</h1>
+          <h1 className="text-4xl md:text-5xl text-white mb-12 tracking-widest" style={{ fontFamily: "'Inter', system-ui, -apple-system, sans-serif", fontWeight: 700 }}>Nuestro Portafolio</h1>
           <div className="h-1 w-24 mb-8" style={{ background: 'linear-gradient(to right, #D946EF, #F59E0B, transparent)' }}></div>
-          <p className="text-lg max-w-2xl" style={{ color: '#A1A1AA' }}>
+          <p className="text-lg max-w-2xl" style={{ color: '#A1A1AA', fontFamily: "'Inter', system-ui, -apple-system, sans-serif" }}>
             Una selección de nuestros trabajos más recientes. Stills de videoclips, sesiones fotográficas y momentos behind-the-scenes que capturan la esencia de cada proyecto.
           </p>
         </div>
@@ -48,11 +48,13 @@ export default function PortfolioGallery() {
             <button
               key={cat.id}
               onClick={() => setActiveCategory(cat.id)}
-              className="px-6 py-2 rounded-lg font-medium transition-all duration-300"
+              className="px-6 py-2 rounded-lg transition-all duration-300"
               style={{
                 backgroundColor: activeCategory === cat.id ? '#D946EF' : '#1C1C1E',
                 color: activeCategory === cat.id ? '#FFFFFF' : '#A1A1AA',
-                boxShadow: activeCategory === cat.id ? '0 0 20px rgba(217, 70, 239, 0.5)' : 'none'
+                boxShadow: activeCategory === cat.id ? '0 0 20px rgba(217, 70, 239, 0.5)' : 'none',
+                fontFamily: "'Inter', system-ui, -apple-system, sans-serif",
+                fontWeight: 500
               }}
             >
               {cat.label}
@@ -84,10 +86,10 @@ export default function PortfolioGallery() {
                 
                 {/* Overlay on Hover */}
                 <div className="absolute inset-0 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex flex-col justify-end p-4" style={{ background: 'linear-gradient(to top, rgba(10, 10, 10, 0.8), transparent)' }}>
-                  <h3 className="text-white text-lg tracking-wider" style={{ fontFamily: "'Bebas Neue', sans-serif" }}>
+                  <h3 className="text-white text-lg tracking-wider" style={{ fontFamily: "'Inter', system-ui, -apple-system, sans-serif", fontWeight: 600 }}>
                     {item.title}
                   </h3>
-                  <p className="text-sm" style={{ color: '#F59E0B', fontFamily: "'Space Mono', monospace" }}>
+                  <p className="text-sm" style={{ color: '#F59E0B', fontFamily: "'Inter', system-ui, -apple-system, sans-serif", fontWeight: 500 }}>
                     {getCategoryLabel(item.category)}
                   </p>
                 </div>
