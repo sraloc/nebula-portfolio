@@ -1,6 +1,9 @@
 @import "tailwindcss";
 @import "tw-animate-css";
 
+/* Nebula Typography */
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Inter:wght@400;500;600;700&family=Space+Mono:wght@400;700&display=swap');
+
 @custom-variant dark (&:is(.dark *));
 
 @theme inline {
@@ -43,74 +46,83 @@
 }
 
 :root {
-  --primary: var(--color-blue-700);
-  --primary-foreground: var(--color-blue-50);
-  --sidebar-primary: var(--color-blue-600);
-  --sidebar-primary-foreground: var(--color-blue-50);
-  --chart-1: var(--color-blue-300);
-  --chart-2: var(--color-blue-500);
-  --chart-3: var(--color-blue-600);
-  --chart-4: var(--color-blue-700);
-  --chart-5: var(--color-blue-800);
+  /* Nebula Color Palette */
+  --nebula-magenta: #D946EF;
+  --nebula-black: #0A0A0A;
+  --nebula-dark-gray: #1C1C1E;
+  --nebula-amber: #F59E0B;
+  --nebula-white: #FFFFFF;
+  --nebula-text-gray: #A1A1AA;
+  
+  --primary: #D946EF;
+  --primary-foreground: #FFFFFF;
+  --sidebar-primary: #D946EF;
+  --sidebar-primary-foreground: #FFFFFF;
+  --chart-1: #D946EF;
+  --chart-2: #F59E0B;
+  --chart-3: #1C1C1E;
+  --chart-4: #0A0A0A;
+  --chart-5: #A1A1AA;
   --radius: 0.65rem;
-  --background: oklch(1 0 0);
-  --foreground: oklch(0.235 0.015 65);
-  --card: oklch(1 0 0);
-  --card-foreground: oklch(0.235 0.015 65);
-  --popover: oklch(1 0 0);
-  --popover-foreground: oklch(0.235 0.015 65);
-  --secondary: oklch(0.98 0.001 286.375);
-  --secondary-foreground: oklch(0.4 0.015 65);
-  --muted: oklch(0.967 0.001 286.375);
-  --muted-foreground: oklch(0.552 0.016 285.938);
-  --accent: oklch(0.967 0.001 286.375);
-  --accent-foreground: oklch(0.141 0.005 285.823);
-  --destructive: oklch(0.577 0.245 27.325);
-  --destructive-foreground: oklch(0.985 0 0);
-  --border: oklch(0.92 0.004 286.32);
-  --input: oklch(0.92 0.004 286.32);
-  --ring: oklch(0.623 0.214 259.815);
-  --sidebar: oklch(0.985 0 0);
-  --sidebar-foreground: oklch(0.235 0.015 65);
-  --sidebar-accent: oklch(0.967 0.001 286.375);
-  --sidebar-accent-foreground: oklch(0.141 0.005 285.823);
-  --sidebar-border: oklch(0.92 0.004 286.32);
-  --sidebar-ring: oklch(0.623 0.214 259.815);
+  --background: #0A0A0A;
+  --foreground: #FFFFFF;
+  --card: #1C1C1E;
+  --card-foreground: #FFFFFF;
+  --popover: #1C1C1E;
+  --popover-foreground: #FFFFFF;
+  --secondary: #1C1C1E;
+  --secondary-foreground: #A1A1AA;
+  --muted: #2C2C2E;
+  --muted-foreground: #A1A1AA;
+  --accent: #D946EF;
+  --accent-foreground: #FFFFFF;
+  --destructive: #EF4444;
+  --destructive-foreground: #FFFFFF;
+  --border: #2C2C2E;
+  --input: #2C2C2E;
+  --ring: #D946EF;
+  --sidebar: #0A0A0A;
+  --sidebar-foreground: #FFFFFF;
+  --sidebar-accent: #D946EF;
+  --sidebar-accent-foreground: #FFFFFF;
+  --sidebar-border: #2C2C2E;
+  --sidebar-ring: #D946EF;
 }
 
 .dark {
-  --primary: var(--color-blue-700);
-  --primary-foreground: var(--color-blue-50);
-  --sidebar-primary: var(--color-blue-500);
-  --sidebar-primary-foreground: var(--color-blue-50);
-  --background: oklch(0.141 0.005 285.823);
-  --foreground: oklch(0.85 0.005 65);
-  --card: oklch(0.21 0.006 285.885);
-  --card-foreground: oklch(0.85 0.005 65);
-  --popover: oklch(0.21 0.006 285.885);
-  --popover-foreground: oklch(0.85 0.005 65);
-  --secondary: oklch(0.24 0.006 286.033);
-  --secondary-foreground: oklch(0.7 0.005 65);
-  --muted: oklch(0.274 0.006 286.033);
-  --muted-foreground: oklch(0.705 0.015 286.067);
-  --accent: oklch(0.274 0.006 286.033);
-  --accent-foreground:  oklch(0.92 0.005 65);
-  --destructive: oklch(0.704 0.191 22.216);
-  --destructive-foreground: oklch(0.985 0 0);
-  --border: oklch(1 0 0 / 10%);
-  --input: oklch(1 0 0 / 15%);
-  --ring: oklch(0.488 0.243 264.376);
-  --chart-1: var(--color-blue-300);
-  --chart-2: var(--color-blue-500);
-  --chart-3: var(--color-blue-600);
-  --chart-4: var(--color-blue-700);
-  --chart-5: var(--color-blue-800);
-  --sidebar: oklch(0.21 0.006 285.885);
-  --sidebar-foreground: oklch(0.85 0.005 65);
-  --sidebar-accent: oklch(0.274 0.006 286.033);
-  --sidebar-accent-foreground:  oklch(0.985 0 0);
-  --sidebar-border: oklch(1 0 0 / 10%);
-  --sidebar-ring: oklch(0.488 0.243 264.376);
+  /* Nebula Dark Theme */
+  --primary: #D946EF;
+  --primary-foreground: #FFFFFF;
+  --sidebar-primary: #D946EF;
+  --sidebar-primary-foreground: #FFFFFF;
+  --background: #0A0A0A;
+  --foreground: #FFFFFF;
+  --card: #1C1C1E;
+  --card-foreground: #FFFFFF;
+  --popover: #1C1C1E;
+  --popover-foreground: #FFFFFF;
+  --secondary: #1C1C1E;
+  --secondary-foreground: #A1A1AA;
+  --muted: #2C2C2E;
+  --muted-foreground: #A1A1AA;
+  --accent: #D946EF;
+  --accent-foreground: #FFFFFF;
+  --destructive: #EF4444;
+  --destructive-foreground: #FFFFFF;
+  --border: #2C2C2E;
+  --input: #2C2C2E;
+  --ring: #D946EF;
+  --chart-1: #D946EF;
+  --chart-2: #F59E0B;
+  --chart-3: #1C1C1E;
+  --chart-4: #0A0A0A;
+  --chart-5: #A1A1AA;
+  --sidebar: #0A0A0A;
+  --sidebar-foreground: #FFFFFF;
+  --sidebar-accent: #D946EF;
+  --sidebar-accent-foreground: #FFFFFF;
+  --sidebar-border: #2C2C2E;
+  --sidebar-ring: #D946EF;
 }
 
 @layer base {
@@ -173,5 +185,14 @@
       padding-right: 2rem;
       max-width: 1280px; /* Standard content width */
     }
+  }
+
+  /* Nebula Custom Styles */
+  .font-bebas {
+    font-family: 'Bebas Neue', 'Arial', sans-serif;
+  }
+
+  .font-space-mono {
+    font-family: 'Space Mono', 'Courier New', monospace;
   }
 }
