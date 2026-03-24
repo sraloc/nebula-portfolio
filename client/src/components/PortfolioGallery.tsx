@@ -1,10 +1,11 @@
-'use client';
-
 import { useState } from 'react';
-import { portfolioItems, getCategoryLabel } from '@/data/portfolio';
+import { portfolioItems, getCategoryLabel, PortfolioItem } from '@/data/portfolio';
+import ImageModal from './ImageModal';
 
 export default function PortfolioGallery() {
   const [activeCategory, setActiveCategory] = useState('all');
+  const [selectedItem, setSelectedItem] = useState<PortfolioItem | null>(null);
+  const [isModalOpen, setIsModalOpen] = useState(false);
 
   const categories = [
     { id: 'all', label: 'Todos' },
@@ -16,6 +17,32 @@ export default function PortfolioGallery() {
   const filteredItems = activeCategory === 'all'
     ? portfolioItems
     : portfolioItems.filter(item => item.category === activeCategory);
+
+  const handleImageClick = (item: PortfolioItem) => {
+    setSelectedItem(item);
+    setIsModalOpen(true);
+  };
+
+  const handleCloseModal = () => {
+    setIsModalOpen(false);
+    setTimeout(() => setSelectedItem(null), 300);
+  };
+
+  const handleNextImage = () => {
+    if (!selectedItem) return;
+    const currentIndex = filteredItems.findIndex(item => item.id === selectedItem.id);
+    if (currentIndex < filteredItems.length - 1) {
+      setSelectedItem(filteredItems[currentIndex + 1]);
+    }
+  };
+
+  const handlePrevImage = () => {
+    if (!selectedItem) return;
+    const currentIndex = filteredItems.findIndex(item => item.id === selectedItem.id);
+    if (currentIndex > 0) {
+      setSelectedItem(filteredItems[currentIndex - 1]);
+    }
+  };
 
   return (
     <div className="min-h-screen py-20" style={{ backgroundColor: '#0A0A0A' }}>
@@ -83,6 +110,7 @@ export default function PortfolioGallery() {
                   animation: `fadeInUp 0.6s ease-out ${index * 0.05}s both`
                 }}
                 className="rounded-lg overflow-hidden transition-all duration-300 group cursor-pointer"
+                onClick={() => handleImageClick(item)}
                 onMouseEnter={(e) => {
                   const el = e.currentTarget as HTMLElement;
                   el.style.transform = 'scale(1.02)';
@@ -131,6 +159,15 @@ export default function PortfolioGallery() {
           </div>
         )}
       </div>
+
+      {/* Image Modal */}
+      <ImageModal
+        item={selectedItem}
+        isOpen={isModalOpen}
+        onClose={handleCloseModal}
+        onNext={handleNextImage}
+        onPrev={handlePrevImage}
+      />
 
       {/* Animation Keyframes */}
       <style>{`

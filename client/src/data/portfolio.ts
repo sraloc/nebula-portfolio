@@ -5,6 +5,7 @@ export interface PortfolioItem {
   category: 'stills' | 'fotografia' | 'makeoff';
   image: string;
   alt: string;
+  description?: string; // Description shown in modal
   rotation?: number; // Rotation in degrees (0, 90, 180, 270)
   featured?: boolean; // If true, item spans 2 columns
   aspectRatio?: 'horizontal' | 'vertical'; // For featured items: horizontal (2x1) or vertical (1x2)
