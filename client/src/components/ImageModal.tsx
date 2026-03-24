@@ -8,16 +8,17 @@ interface ImageModalProps {
   onClose: () => void;
   onNext?: () => void;
   onPrev?: () => void;
+  clickPosition?: { x: number; y: number };
 }
 
-export default function ImageModal({ item, isOpen, onClose, onNext, onPrev }: ImageModalProps) {
+export default function ImageModal({ item, isOpen, onClose, onNext, onPrev, clickPosition = { x: window.innerWidth / 2, y: window.innerHeight / 2 } }: ImageModalProps) {
   const [isAnimating, setIsAnimating] = useState(false);
 
   useEffect(() => {
     const handleKeyDown = (e: KeyboardEvent) => {
       if (e.key === 'Escape') handleClose();
-      if (e.key === 'ArrowRight') onNext?.();
-      if (e.key === 'ArrowLeft') onPrev?.();
+      if (e.key === 'ArrowRight' && onNext) onNext();
+      if (e.key === 'ArrowLeft' && onPrev) onPrev();
     };
 
     if (isOpen) {
@@ -49,6 +50,12 @@ export default function ImageModal({ item, isOpen, onClose, onNext, onPrev }: Im
     return labels[category] || category;
   };
 
+  // Calcular transformación inicial desde la posición del click
+  const centerX = window.innerWidth / 2;
+  const centerY = window.innerHeight / 2;
+  const offsetX = clickPosition.x - centerX;
+  const offsetY = clickPosition.y - centerY;
+
   return (
     <div
       className="fixed inset-0 z-50 flex items-center justify-center"
@@ -72,14 +79,17 @@ export default function ImageModal({ item, isOpen, onClose, onNext, onPrev }: Im
         <X className="w-6 h-6 text-white" />
       </button>
 
-      {/* Main Image Container - Zoom Effect */}
+      {/* Main Image Container - Zoom Effect from Click Position */}
       <div
         className="relative w-full h-full flex items-center justify-center p-4 md:p-8"
         onClick={(e) => e.stopPropagation()}
         style={{
           opacity: isAnimating ? 1 : 0,
-          transform: isAnimating ? 'scale(1)' : 'scale(0.8)',
-          transition: 'opacity 0.4s ease-out, transform 0.4s ease-out'
+          transform: isAnimating 
+            ? 'translate(0, 0) scale(1)' 
+            : `translate(${offsetX * 0.3}px, ${offsetY * 0.3}px) scale(0.8)`,
+          transition: 'opacity 0.4s ease-out, transform 0.4s ease-out',
+          transformOrigin: `${clickPosition.x}px ${clickPosition.y}px`
         }}
       >
         <img
@@ -92,7 +102,10 @@ export default function ImageModal({ item, isOpen, onClose, onNext, onPrev }: Im
       {/* Previous Button - Left Center */}
       {onPrev && (
         <button
-          onClick={onPrev}
+          onClick={(e) => {
+            e.stopPropagation();
+            onPrev();
+          }}
           className="absolute left-4 md:left-8 top-1/2 transform -translate-y-1/2 z-20 p-3 rounded-lg transition-all duration-300 hover:bg-white/10 group"
           aria-label="Previous image"
           style={{
@@ -108,7 +121,10 @@ export default function ImageModal({ item, isOpen, onClose, onNext, onPrev }: Im
       {/* Next Button - Right Center */}
       {onNext && (
         <button
-          onClick={onNext}
+          onClick={(e) => {
+            e.stopPropagation();
+            onNext();
+          }}
           className="absolute right-4 md:right-8 top-1/2 transform -translate-y-1/2 z-20 p-3 rounded-lg transition-all duration-300 hover:bg-white/10 group"
           aria-label="Next image"
           style={{

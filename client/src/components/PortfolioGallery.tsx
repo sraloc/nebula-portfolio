@@ -1,4 +1,4 @@
-import { useState } from 'react';
+import { useState, useRef } from 'react';
 import { portfolioItems, getCategoryLabel, PortfolioItem } from '@/data/portfolio';
 import ImageModal from './ImageModal';
 
@@ -6,6 +6,8 @@ export default function PortfolioGallery() {
   const [activeCategory, setActiveCategory] = useState('all');
   const [selectedItem, setSelectedItem] = useState<PortfolioItem | null>(null);
   const [isModalOpen, setIsModalOpen] = useState(false);
+  const [clickPosition, setClickPosition] = useState({ x: 0, y: 0 });
+  const imageRefs = useRef<Record<string, HTMLDivElement | null>>({});
 
   const categories = [
     { id: 'all', label: 'Todos' },
@@ -18,7 +20,12 @@ export default function PortfolioGallery() {
     ? portfolioItems
     : portfolioItems.filter(item => item.category === activeCategory);
 
-  const handleImageClick = (item: PortfolioItem) => {
+  const handleImageClick = (item: PortfolioItem, event: React.MouseEvent) => {
+    const rect = (event.currentTarget as HTMLElement).getBoundingClientRect();
+    setClickPosition({
+      x: rect.left + rect.width / 2,
+      y: rect.top + rect.height / 2
+    });
     setSelectedItem(item);
     setIsModalOpen(true);
   };
@@ -104,13 +111,16 @@ export default function PortfolioGallery() {
             return (
               <div
                 key={item.id}
+                ref={(el) => {
+                  if (el) imageRefs.current[item.id] = el;
+                }}
                 style={{
                   gridColumn,
                   gridRow,
                   animation: `fadeInUp 0.6s ease-out ${index * 0.05}s both`
                 }}
                 className="rounded-lg overflow-hidden transition-all duration-300 group cursor-pointer"
-                onClick={() => handleImageClick(item)}
+                onClick={(e) => handleImageClick(item, e)}
                 onMouseEnter={(e) => {
                   const el = e.currentTarget as HTMLElement;
                   el.style.transform = 'scale(1.02)';
@@ -167,6 +177,7 @@ export default function PortfolioGallery() {
         onClose={handleCloseModal}
         onNext={handleNextImage}
         onPrev={handlePrevImage}
+        clickPosition={clickPosition}
       />
 
       {/* Animation Keyframes */}
