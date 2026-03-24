@@ -137,12 +137,12 @@ export default function ImageModal({ item, isOpen, onClose, onNext, onPrev, clic
         </button>
       )}
 
-      {/* Image Info - Bottom Center */}
+      {/* Image Info - Top Left */}
       <div
-        className="absolute bottom-6 md:bottom-8 left-1/2 transform -translate-x-1/2 text-center z-20"
+        className="absolute top-6 md:top-8 left-6 md:left-8 z-20 text-left"
         style={{
           opacity: isAnimating ? 1 : 0,
-          transform: isAnimating ? 'translateY(0) translateX(-50%)' : 'translateY(10px) translateX(-50%)',
+          transform: isAnimating ? 'translateX(0)' : 'translateX(-20px)',
           transition: 'opacity 0.3s ease-out 0.2s, transform 0.3s ease-out 0.2s'
         }}
       >
@@ -160,7 +160,7 @@ export default function ImageModal({ item, isOpen, onClose, onNext, onPrev, clic
         </h2>
         {item.description && (
           <p
-            className="text-sm md:text-base max-w-md mx-auto mt-2"
+            className="text-sm md:text-base max-w-sm mt-2"
             style={{ color: '#A1A1AA', fontFamily: "'Inter', system-ui, -apple-system, sans-serif" }}
           >
             {item.description}
