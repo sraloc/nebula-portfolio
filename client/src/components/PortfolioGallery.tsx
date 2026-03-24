@@ -22,8 +22,8 @@ export default function PortfolioGallery() {
       <div className="container mx-auto px-4">
         {/* Header */}
         <div className="mb-16">
+          <p className="text-xs md:text-sm tracking-widest font-semibold mb-4" style={{ color: '#D946EF', fontFamily: "'Inter', system-ui, -apple-system, sans-serif", letterSpacing: '0.15em' }}>PORTAFOLIO</p>
           <h1 className="text-4xl md:text-5xl text-white mb-12 tracking-widest" style={{ fontFamily: "'Inter', system-ui, -apple-system, sans-serif", fontWeight: 700 }}>Nuestro Portafolio</h1>
-          <div className="h-1 w-24 mb-8" style={{ background: 'linear-gradient(to right, #D946EF, #F59E0B, transparent)' }}></div>
           <p className="text-lg max-w-2xl" style={{ color: '#A1A1AA', fontFamily: "'Inter', system-ui, -apple-system, sans-serif" }}>
             Una selección de nuestros trabajos más recientes. Stills de videoclips, sesiones fotográficas y momentos behind-the-scenes que capturan la esencia de cada proyecto.
           </p>
