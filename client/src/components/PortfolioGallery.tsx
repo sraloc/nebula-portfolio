@@ -59,55 +59,67 @@ export default function PortfolioGallery() {
             gridAutoFlow: 'dense'
           }}
         >
-          {filteredItems.map((item, index) => (
-            <div
-              key={item.id}
-              style={{
-                gridColumn: item.featured ? 'span 2' : 'span 1',
-                gridRow: item.featured ? 'span 1' : 'span 1',
-                animation: `fadeInUp 0.6s ease-out ${index * 0.05}s both`
-              }}
-              className="rounded-lg overflow-hidden transition-all duration-300 group cursor-pointer"
-              onMouseEnter={(e) => {
-                const el = e.currentTarget as HTMLElement;
-                el.style.transform = 'scale(1.02)';
-              }}
-              onMouseLeave={(e) => {
-                const el = e.currentTarget as HTMLElement;
-                el.style.transform = 'scale(1)';
-              }}
-            >
-              {/* Image Container */}
-              <div 
-                className="relative overflow-hidden w-full h-full" 
-                style={{ backgroundColor: '#1C1C1E' }}
-              >
-                <img
-                  src={item.image}
-                  alt={item.alt}
-                  loading="lazy"
-                  className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500"
-                  style={{
-                    transform: item.rotation ? `rotate(${item.rotation}deg)` : 'rotate(0deg)',
-                    transformOrigin: 'center'
-                  }}
-                />
-                
-                {/* Overlay on Hover */}
-                <div className="absolute inset-0 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex flex-col justify-end p-4" style={{ background: 'linear-gradient(to top, rgba(10, 10, 10, 0.9), rgba(10, 10, 10, 0.4), transparent)' }}>
-                  <h3 className="text-white text-sm md:text-base tracking-wider" style={{ fontFamily: "'Inter', system-ui, -apple-system, sans-serif", fontWeight: 600 }}>
-                    {item.title}
-                  </h3>
-                  <p className="text-xs md:text-sm" style={{ color: '#F59E0B', fontFamily: "'Inter', system-ui, -apple-system, sans-serif", fontWeight: 500 }}>
-                    {getCategoryLabel(item.category)}
-                  </p>
-                </div>
+          {filteredItems.map((item, index) => {
+            // Determinar gridColumn y gridRow basado en featured y aspectRatio
+            let gridColumn = 'span 1';
+            let gridRow = 'span 1';
+            
+            if (item.featured) {
+              if (item.aspectRatio === 'vertical') {
+                gridColumn = 'span 1';
+                gridRow = 'span 2';
+              } else {
+                gridColumn = 'span 2';
+                gridRow = 'span 1';
+              }
+            }
 
-                {/* Magenta accent on hover */}
-                <div className="absolute top-0 left-0 w-1 h-0 group-hover:h-full transition-all duration-500" style={{ backgroundColor: '#D946EF' }}></div>
+            return (
+              <div
+                key={item.id}
+                style={{
+                  gridColumn,
+                  gridRow,
+                  animation: `fadeInUp 0.6s ease-out ${index * 0.05}s both`
+                }}
+                className="rounded-lg overflow-hidden transition-all duration-300 group cursor-pointer"
+                onMouseEnter={(e) => {
+                  const el = e.currentTarget as HTMLElement;
+                  el.style.transform = 'scale(1.02)';
+                }}
+                onMouseLeave={(e) => {
+                  const el = e.currentTarget as HTMLElement;
+                  el.style.transform = 'scale(1)';
+                }}
+              >
+                {/* Image Container */}
+                <div 
+                  className="relative overflow-hidden w-full h-full" 
+                  style={{ backgroundColor: '#1C1C1E' }}
+                >
+                  <img
+                    src={item.image}
+                    alt={item.alt}
+                    loading="lazy"
+                    className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500"
+                  />
+                  
+                  {/* Overlay on Hover */}
+                  <div className="absolute inset-0 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex flex-col justify-end p-4" style={{ background: 'linear-gradient(to top, rgba(10, 10, 10, 0.9), rgba(10, 10, 10, 0.4), transparent)' }}>
+                    <h3 className="text-white text-sm md:text-base tracking-wider" style={{ fontFamily: "'Inter', system-ui, -apple-system, sans-serif", fontWeight: 600 }}>
+                      {item.title}
+                    </h3>
+                    <p className="text-xs md:text-sm" style={{ color: '#F59E0B', fontFamily: "'Inter', system-ui, -apple-system, sans-serif", fontWeight: 500 }}>
+                      {getCategoryLabel(item.category)}
+                    </p>
+                  </div>
+
+                  {/* Magenta accent on hover */}
+                  <div className="absolute top-0 left-0 w-1 h-0 group-hover:h-full transition-all duration-500" style={{ backgroundColor: '#D946EF' }}></div>
+                </div>
               </div>
-            </div>
-          ))}
+            );
+          })}
         </div>
 
         {/* Empty State */}

@@ -7,6 +7,7 @@ export interface PortfolioItem {
   alt: string;
   rotation?: number; // Rotation in degrees (0, 90, 180, 270)
   featured?: boolean; // If true, item spans 2 columns
+  aspectRatio?: 'horizontal' | 'vertical'; // For featured items: horizontal (2x1) or vertical (1x2)
 }
 
 export const portfolioItems: PortfolioItem[] = [
@@ -31,7 +32,8 @@ export const portfolioItems: PortfolioItem[] = [
     category: 'stills',
     image: 'https://d2xsxph8kpxj0f.cloudfront.net/310519663468761794/e8xfFyW6dXJEFGQgKJqfmX/VERTE ENCIMA 3_1d21eb61.webp',
     alt: 'Still from VERTE ENCIMA videoclip - Scene 3',
-    featured: true
+    featured: true,
+    aspectRatio: 'horizontal'
   },
   {
     id: 'still-4',
@@ -75,7 +77,8 @@ export const portfolioItems: PortfolioItem[] = [
     category: 'fotografia',
     image: 'https://d2xsxph8kpxj0f.cloudfront.net/310519663468761794/e8xfFyW6dXJEFGQgKJqfmX/DJ LA FERIA_ab8746ef.webp',
     alt: 'Photography session - DJ LA FERIA',
-    featured: true
+    featured: true,
+    aspectRatio: 'horizontal'
   },
   {
     id: 'photo-2',
@@ -104,7 +107,8 @@ export const portfolioItems: PortfolioItem[] = [
     category: 'fotografia',
     image: 'https://d2xsxph8kpxj0f.cloudfront.net/310519663468761794/e8xfFyW6dXJEFGQgKJqfmX/Modelaje_d00b8a52.webp',
     alt: 'Fashion photography - Modelaje',
-    featured: true
+    featured: true,
+    aspectRatio: 'horizontal'
   },
   {
     id: 'photo-6',
@@ -127,7 +131,8 @@ export const portfolioItems: PortfolioItem[] = [
     category: 'makeoff',
     image: 'https://d2xsxph8kpxj0f.cloudfront.net/310519663468761794/e8xfFyW6dXJEFGQgKJqfmX/Logo espalda_cbcd1f3b.webp',
     alt: 'Behind the scenes - Team with logo',
-    featured: true
+    featured: true,
+    aspectRatio: 'vertical'
   },
   {
     id: 'makeoff-3',
