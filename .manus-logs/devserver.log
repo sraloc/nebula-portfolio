@@ -1,0 +1,18 @@
+[2026-03-24T06:43:57.859Z] Starting dev server with command: pnpm run dev
+[2026-03-24T06:43:58.558Z] 
+[2026-03-24T06:43:58.559Z] > nebula-portfolio@1.0.0 dev /home/ubuntu/nebula-portfolio
+[2026-03-24T06:43:58.559Z] > vite --host
+[2026-03-24T06:43:58.559Z] 
+[2026-03-24T06:43:59.056Z] 
+[2026-03-24T06:43:59.056Z] VITE v7.1.9  ready in 463 ms
+[2026-03-24T06:43:59.056Z] 
+[2026-03-24T06:43:59.056Z] ➜  Local:   http://localhost:3000/
+[2026-03-24T06:43:59.057Z] ➜  Network: http://169.254.0.21:3000/
+[2026-03-24T06:44:05.526Z] [baseline-browser-mapping] The data in this module is over two months old.  To ensure accurate Baseline data, please update: `npm i baseline-browser-mapping@latest -D`
+[2026-03-24T06:44:06.165Z] [vite:css][postcss] @import must precede all other statements (besides @charset or empty @layer)
+[2026-03-24T06:44:06.165Z] 5038 |    initial-value: 0;
+[2026-03-24T06:44:06.165Z] 5039 |  }
+[2026-03-24T06:44:06.166Z] 5040 |  @import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Inter:wght@400;500;600;700&family=Space+Mono:...
+[2026-03-24T06:44:06.166Z] |  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+[2026-03-24T06:44:06.166Z] 5041 |  :root {
+[2026-03-24T06:44:06.166Z] 5042 |    --nebula-magenta: #D946EF;
