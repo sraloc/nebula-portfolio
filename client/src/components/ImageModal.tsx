@@ -1,5 +1,5 @@
 import { useState, useEffect } from 'react';
-import { X } from 'lucide-react';
+import { X, ChevronLeft, ChevronRight } from 'lucide-react';
 import { PortfolioItem } from '@/data/portfolio';
 
 interface ImageModalProps {
@@ -15,7 +15,7 @@ export default function ImageModal({ item, isOpen, onClose, onNext, onPrev }: Im
 
   useEffect(() => {
     const handleKeyDown = (e: KeyboardEvent) => {
-      if (e.key === 'Escape') onClose();
+      if (e.key === 'Escape') handleClose();
       if (e.key === 'ArrowRight') onNext?.();
       if (e.key === 'ArrowLeft') onPrev?.();
     };
@@ -51,129 +51,113 @@ export default function ImageModal({ item, isOpen, onClose, onNext, onPrev }: Im
 
   return (
     <div
-      className="fixed inset-0 z-50 flex items-center justify-center backdrop-blur-sm"
+      className="fixed inset-0 z-50 flex items-center justify-center"
       style={{
         backgroundColor: isAnimating ? 'rgba(0, 0, 0, 0.95)' : 'rgba(0, 0, 0, 0)',
-        transition: 'background-color 0.3s ease-out'
+        transition: 'background-color 0.4s ease-out'
       }}
       onClick={handleClose}
     >
-      {/* Modal Container */}
+      {/* Close Button - Top Right */}
+      <button
+        onClick={handleClose}
+        className="absolute top-6 right-6 z-20 p-2 rounded-lg transition-all duration-300 hover:bg-white/10"
+        aria-label="Close modal"
+        style={{
+          opacity: isAnimating ? 1 : 0,
+          transform: isAnimating ? 'translateY(0)' : 'translateY(-10px)',
+          transition: 'opacity 0.3s ease-out 0.1s, transform 0.3s ease-out 0.1s'
+        }}
+      >
+        <X className="w-6 h-6 text-white" />
+      </button>
+
+      {/* Main Image Container - Zoom Effect */}
       <div
-        className="relative w-full h-full max-w-6xl max-h-screen flex flex-col items-center justify-center p-4 md:p-8"
+        className="relative w-full h-full flex items-center justify-center p-4 md:p-8"
         onClick={(e) => e.stopPropagation()}
         style={{
           opacity: isAnimating ? 1 : 0,
-          transform: isAnimating ? 'scale(1)' : 'scale(0.95)',
-          transition: 'opacity 0.3s ease-out, transform 0.3s ease-out'
+          transform: isAnimating ? 'scale(1)' : 'scale(0.8)',
+          transition: 'opacity 0.4s ease-out, transform 0.4s ease-out'
         }}
       >
-        {/* Close Button */}
+        <img
+          src={item.image}
+          alt={item.alt}
+          className="max-w-full max-h-full object-contain"
+        />
+      </div>
+
+      {/* Previous Button - Left Center */}
+      {onPrev && (
         <button
-          onClick={handleClose}
-          className="absolute top-4 right-4 md:top-8 md:right-8 z-10 p-2 rounded-lg transition-all duration-300 hover:bg-white/10"
-          aria-label="Close modal"
+          onClick={onPrev}
+          className="absolute left-4 md:left-8 top-1/2 transform -translate-y-1/2 z-20 p-3 rounded-lg transition-all duration-300 hover:bg-white/10 group"
+          aria-label="Previous image"
           style={{
             opacity: isAnimating ? 1 : 0,
-            transform: isAnimating ? 'translateY(0)' : 'translateY(-10px)',
-            transition: 'opacity 0.3s ease-out 0.1s, transform 0.3s ease-out 0.1s'
+            transform: isAnimating ? 'translateX(0) translateY(-50%)' : 'translateX(-20px) translateY(-50%)',
+            transition: 'opacity 0.3s ease-out 0.15s, transform 0.3s ease-out 0.15s'
           }}
         >
-          <X className="w-6 h-6 text-white" />
+          <ChevronLeft className="w-8 h-8 text-white group-hover:text-[#D946EF] transition-colors duration-300" />
         </button>
+      )}
 
-        {/* Image Container */}
-        <div className="relative w-full h-full flex flex-col items-center justify-center gap-6">
-          <img
-            src={item.image}
-            alt={item.alt}
-            className="max-w-full max-h-[70vh] object-contain rounded-lg"
-            style={{
-              opacity: isAnimating ? 1 : 0,
-              transform: isAnimating ? 'scale(1)' : 'scale(0.9)',
-              transition: 'opacity 0.4s ease-out 0.15s, transform 0.4s ease-out 0.15s'
-            }}
-          />
+      {/* Next Button - Right Center */}
+      {onNext && (
+        <button
+          onClick={onNext}
+          className="absolute right-4 md:right-8 top-1/2 transform -translate-y-1/2 z-20 p-3 rounded-lg transition-all duration-300 hover:bg-white/10 group"
+          aria-label="Next image"
+          style={{
+            opacity: isAnimating ? 1 : 0,
+            transform: isAnimating ? 'translateX(0) translateY(-50%)' : 'translateX(20px) translateY(-50%)',
+            transition: 'opacity 0.3s ease-out 0.15s, transform 0.3s ease-out 0.15s'
+          }}
+        >
+          <ChevronRight className="w-8 h-8 text-white group-hover:text-[#D946EF] transition-colors duration-300" />
+        </button>
+      )}
 
-          {/* Details Section */}
-          <div
-            className="w-full text-center"
-            style={{
-              opacity: isAnimating ? 1 : 0,
-              transform: isAnimating ? 'translateY(0)' : 'translateY(10px)',
-              transition: 'opacity 0.3s ease-out 0.2s, transform 0.3s ease-out 0.2s'
-            }}
+      {/* Image Info - Bottom Center */}
+      <div
+        className="absolute bottom-6 md:bottom-8 left-1/2 transform -translate-x-1/2 text-center z-20"
+        style={{
+          opacity: isAnimating ? 1 : 0,
+          transform: isAnimating ? 'translateY(0) translateX(-50%)' : 'translateY(10px) translateX(-50%)',
+          transition: 'opacity 0.3s ease-out 0.2s, transform 0.3s ease-out 0.2s'
+        }}
+      >
+        <p
+          className="text-xs md:text-sm tracking-widest font-semibold mb-2"
+          style={{ color: '#D946EF', fontFamily: "'Inter', system-ui, -apple-system, sans-serif", letterSpacing: '0.15em' }}
+        >
+          {getCategoryLabel(item.category)}
+        </p>
+        <h2
+          className="text-lg md:text-xl text-white font-bold"
+          style={{ fontFamily: "'Inter', system-ui, -apple-system, sans-serif" }}
+        >
+          {item.title}
+        </h2>
+        {item.description && (
+          <p
+            className="text-sm md:text-base max-w-md mx-auto mt-2"
+            style={{ color: '#A1A1AA', fontFamily: "'Inter', system-ui, -apple-system, sans-serif" }}
           >
-            <p
-              className="text-xs md:text-sm tracking-widest font-semibold mb-2"
-              style={{ color: '#D946EF', fontFamily: "'Inter', system-ui, -apple-system, sans-serif", letterSpacing: '0.15em' }}
-            >
-              {getCategoryLabel(item.category)}
-            </p>
-            <h2
-              className="text-2xl md:text-3xl text-white font-bold mb-3"
-              style={{ fontFamily: "'Inter', system-ui, -apple-system, sans-serif" }}
-            >
-              {item.title}
-            </h2>
-            {item.description && (
-              <p
-                className="text-base md:text-lg max-w-2xl mx-auto"
-                style={{ color: '#A1A1AA', fontFamily: "'Inter', system-ui, -apple-system, sans-serif" }}
-              >
-                {item.description}
-              </p>
-            )}
-          </div>
-        </div>
-
-        {/* Navigation Buttons */}
-        {(onPrev || onNext) && (
-          <div
-            className="absolute bottom-4 md:bottom-8 left-1/2 transform -translate-x-1/2 flex gap-4"
-            style={{
-              opacity: isAnimating ? 1 : 0,
-              transform: isAnimating ? 'translateY(0) translateX(-50%)' : 'translateY(10px) translateX(-50%)',
-              transition: 'opacity 0.3s ease-out 0.25s, transform 0.3s ease-out 0.25s'
-            }}
-          >
-            {onPrev && (
-              <button
-                onClick={onPrev}
-                className="px-4 py-2 rounded-lg transition-all duration-300 hover:bg-white/10"
-                style={{ color: '#D946EF', fontFamily: "'Inter', system-ui, -apple-system, sans-serif" }}
-              >
-                ← Anterior
-              </button>
-            )}
-            {onNext && (
-              <button
-                onClick={onNext}
-                className="px-4 py-2 rounded-lg transition-all duration-300 hover:bg-white/10"
-                style={{ color: '#D946EF', fontFamily: "'Inter', system-ui, -apple-system, sans-serif" }}
-              >
-                Siguiente →
-              </button>
-            )}
-          </div>
+            {item.description}
+          </p>
         )}
       </div>
 
       {/* Animation Keyframes */}
       <style>{`
-        @keyframes fadeIn {
+        @keyframes zoomIn {
           from {
             opacity: 0;
-          }
-          to {
-            opacity: 1;
-          }
-        }
-
-        @keyframes scaleIn {
-          from {
-            opacity: 0;
-            transform: scale(0.95);
+            transform: scale(0.8);
           }
           to {
             opacity: 1;
@@ -181,14 +165,12 @@ export default function ImageModal({ item, isOpen, onClose, onNext, onPrev }: Im
           }
         }
 
-        @keyframes slideUp {
+        @keyframes fadeIn {
           from {
             opacity: 0;
-            transform: translateY(10px);
           }
           to {
             opacity: 1;
-            transform: translateY(0);
           }
         }
       `}</style>
