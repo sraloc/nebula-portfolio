@@ -82,7 +82,7 @@ export default function ImageModal({ item, isOpen, onClose, onNext, onPrev, clic
       {/* Main Image Container - Zoom Effect from Click Position */}
       <div
         className="relative w-full h-full flex items-center justify-center p-4 md:p-8"
-        onClick={(e) => e.stopPropagation()}
+        onClick={handleClose}
         style={{
           opacity: isAnimating ? 1 : 0,
           transform: isAnimating 
@@ -96,6 +96,7 @@ export default function ImageModal({ item, isOpen, onClose, onNext, onPrev, clic
           src={item.image}
           alt={item.alt}
           className="max-w-full max-h-full object-contain"
+          onClick={(e) => e.stopPropagation()}
         />
       </div>
 
