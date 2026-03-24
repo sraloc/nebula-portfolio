@@ -118,14 +118,14 @@ export const portfolioItems: PortfolioItem[] = [
     id: 'makeoff-1',
     title: 'Joaco operando',
     category: 'makeoff',
-    image: 'https://d2xsxph8kpxj0f.cloudfront.net/310519663468761794/e8xfFyW6dXJEFGQgKJqfmX/Joaco operando_dfbb62ae.webp',
+    image: 'https://d2xsxph8kpxj0f.cloudfront.net/310519663468761794/e8xfFyW6dXJEFGQgKJqfmX/Joaco operando_14adca45.webp',
     alt: 'Behind the scenes - Joaco operating camera'
   },
   {
     id: 'makeoff-2',
     title: 'Logo espalda',
     category: 'makeoff',
-    image: 'https://d2xsxph8kpxj0f.cloudfront.net/310519663468761794/e8xfFyW6dXJEFGQgKJqfmX/Logo espalda_12370b8c.webp',
+    image: 'https://d2xsxph8kpxj0f.cloudfront.net/310519663468761794/e8xfFyW6dXJEFGQgKJqfmX/Logo espalda_cbcd1f3b.webp',
     alt: 'Behind the scenes - Team with logo',
     featured: true
   },
@@ -133,28 +133,28 @@ export const portfolioItems: PortfolioItem[] = [
     id: 'makeoff-3',
     title: 'Titi Russo',
     category: 'makeoff',
-    image: 'https://d2xsxph8kpxj0f.cloudfront.net/310519663468761794/e8xfFyW6dXJEFGQgKJqfmX/Titi Russo_f89bbfeb.webp',
+    image: 'https://d2xsxph8kpxj0f.cloudfront.net/310519663468761794/e8xfFyW6dXJEFGQgKJqfmX/Titi Russo_d962d52e.webp',
     alt: 'Behind the scenes - Titi Russo'
   },
   {
     id: 'makeoff-4',
     title: 'Titi Russo naranja',
     category: 'makeoff',
-    image: 'https://d2xsxph8kpxj0f.cloudfront.net/310519663468761794/e8xfFyW6dXJEFGQgKJqfmX/Titi Russo naranja_722034a4.webp',
+    image: 'https://d2xsxph8kpxj0f.cloudfront.net/310519663468761794/e8xfFyW6dXJEFGQgKJqfmX/Titi Russo naranja_b8939bd2.webp',
     alt: 'Behind the scenes - Titi Russo with orange lighting'
   },
   {
     id: 'makeoff-5',
     title: 'Tobar operando',
     category: 'makeoff',
-    image: 'https://d2xsxph8kpxj0f.cloudfront.net/310519663468761794/e8xfFyW6dXJEFGQgKJqfmX/Tobar operando_f99335b2.webp',
+    image: 'https://d2xsxph8kpxj0f.cloudfront.net/310519663468761794/e8xfFyW6dXJEFGQgKJqfmX/Tobar operando_fa76978a.webp',
     alt: 'Behind the scenes - Tobar operating equipment'
   },
   {
     id: 'makeoff-6',
     title: 'Set shot',
     category: 'makeoff',
-    image: 'https://d2xsxph8kpxj0f.cloudfront.net/310519663468761794/e8xfFyW6dXJEFGQgKJqfmX/_DSC4097_6723706e.webp',
+    image: 'https://d2xsxph8kpxj0f.cloudfront.net/310519663468761794/e8xfFyW6dXJEFGQgKJqfmX/_DSC4097_70a7764b.webp',
     alt: 'Behind the scenes - Production set'
   }
 ];
