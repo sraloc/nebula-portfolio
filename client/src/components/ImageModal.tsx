@@ -140,6 +140,7 @@ export default function ImageModal({ item, isOpen, onClose, onNext, onPrev, clic
       {/* Image Info - Top Left */}
       <div
         className="absolute top-6 md:top-8 left-6 md:left-8 z-20 text-left"
+        onClick={(e) => e.stopPropagation()}
         style={{
           opacity: isAnimating ? 1 : 0,
           transform: isAnimating ? 'translateX(0)' : 'translateX(-20px)',
