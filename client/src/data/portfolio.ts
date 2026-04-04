@@ -1,175 +1,429 @@
-// Portfolio data with CDN URLs
 export interface PortfolioItem {
-  id: string;
+  id: number;
   title: string;
+  alt: string;
   category: 'stills' | 'fotografia' | 'makeoff';
   image: string;
-  alt: string;
-  description?: string; // Description shown in modal
-  rotation?: number; // Rotation in degrees (0, 90, 180, 270)
-  featured?: boolean; // If true, item spans 2 columns
-  aspectRatio?: 'horizontal' | 'vertical'; // For featured items: horizontal (2x1) or vertical (1x2)
+  description?: string;
+  aspectRatio?: 'horizontal' | 'vertical';
 }
 
 export const portfolioItems: PortfolioItem[] = [
-  // STILLS - Videoclips
   {
-    id: 'still-1',
-    title: 'VERTE ENCIMA 1',
-    category: 'stills',
-    image: 'https://d2xsxph8kpxj0f.cloudfront.net/310519663468761794/e8xfFyW6dXJEFGQgKJqfmX/VERTE ENCIMA 1_ec811bb6.webp',
-    alt: 'Still from VERTE ENCIMA videoclip - Scene 1'
+    "id": 0,
+    "title": "Gangrena",
+    "alt": "Gangrena",
+    "category": "stills",
+    "image": "https://d2xsxph8kpxj0f.cloudfront.net/310519663468761794/e8xfFyW6dXJEFGQgKJqfmX/Gangrena_caacdf96.jpg",
+    "description": ""
   },
   {
-    id: 'still-2',
-    title: 'VERTE ENCIMA 2',
-    category: 'stills',
-    image: 'https://d2xsxph8kpxj0f.cloudfront.net/310519663468761794/e8xfFyW6dXJEFGQgKJqfmX/VERTE ENCIMA 2_0e5c4b40.webp',
-    alt: 'Still from VERTE ENCIMA videoclip - Scene 2'
+    "id": 1,
+    "title": "Gangrena(1)",
+    "alt": "Gangrena(1)",
+    "category": "stills",
+    "image": "https://d2xsxph8kpxj0f.cloudfront.net/310519663468761794/e8xfFyW6dXJEFGQgKJqfmX/Gangrena(1)_ef755613.jpg",
+    "description": ""
   },
   {
-    id: 'still-3',
-    title: 'VERTE ENCIMA 3',
-    category: 'stills',
-    image: 'https://d2xsxph8kpxj0f.cloudfront.net/310519663468761794/e8xfFyW6dXJEFGQgKJqfmX/VERTE ENCIMA 3_1d21eb61.webp',
-    alt: 'Still from VERTE ENCIMA videoclip - Scene 3',
-    featured: true,
-    aspectRatio: 'horizontal'
+    "id": 2,
+    "title": "Gangrena(2)",
+    "alt": "Gangrena(2)",
+    "category": "stills",
+    "image": "https://d2xsxph8kpxj0f.cloudfront.net/310519663468761794/e8xfFyW6dXJEFGQgKJqfmX/Gangrena(2)_be9623f6.jpg",
+    "description": ""
   },
   {
-    id: 'still-4',
-    title: 'VERTE ENCIMA 4',
-    category: 'stills',
-    image: 'https://d2xsxph8kpxj0f.cloudfront.net/310519663468761794/e8xfFyW6dXJEFGQgKJqfmX/VERTE ENCIMA 4_40b8287e.webp',
-    alt: 'Still from VERTE ENCIMA videoclip - Scene 4'
+    "id": 3,
+    "title": "Gangrena(3)",
+    "alt": "Gangrena(3)",
+    "category": "stills",
+    "image": "https://d2xsxph8kpxj0f.cloudfront.net/310519663468761794/e8xfFyW6dXJEFGQgKJqfmX/Gangrena(3)_a229d670.jpg",
+    "description": ""
   },
   {
-    id: 'still-5',
-    title: 'Volver pa atrás 1',
-    category: 'stills',
-    image: 'https://d2xsxph8kpxj0f.cloudfront.net/310519663468761794/e8xfFyW6dXJEFGQgKJqfmX/Volver pa atras 1_04399d1f.webp',
-    alt: 'Still from Volver pa atrás videoclip - Scene 1'
+    "id": 4,
+    "title": "Gangrena(4)",
+    "alt": "Gangrena(4)",
+    "category": "stills",
+    "image": "https://d2xsxph8kpxj0f.cloudfront.net/310519663468761794/e8xfFyW6dXJEFGQgKJqfmX/Gangrena(4)_6786ed6f.jpg",
+    "description": ""
   },
   {
-    id: 'still-6',
-    title: 'Volver pa atrás 2',
-    category: 'stills',
-    image: 'https://d2xsxph8kpxj0f.cloudfront.net/310519663468761794/e8xfFyW6dXJEFGQgKJqfmX/Volver pa atras 2_9bce6061.webp',
-    alt: 'Still from Volver pa atrás videoclip - Scene 2'
+    "id": 5,
+    "title": "Gangrena(5)",
+    "alt": "Gangrena(5)",
+    "category": "stills",
+    "image": "https://d2xsxph8kpxj0f.cloudfront.net/310519663468761794/e8xfFyW6dXJEFGQgKJqfmX/Gangrena(5)_20c60440.jpg",
+    "description": ""
   },
   {
-    id: 'still-7',
-    title: 'Volver pa atrás 3',
-    category: 'stills',
-    image: 'https://d2xsxph8kpxj0f.cloudfront.net/310519663468761794/e8xfFyW6dXJEFGQgKJqfmX/Volver pa atras 3_b189b622.webp',
-    alt: 'Still from Volver pa atrás videoclip - Scene 3'
+    "id": 6,
+    "title": "Gangrena(6)",
+    "alt": "Gangrena(6)",
+    "category": "stills",
+    "image": "https://d2xsxph8kpxj0f.cloudfront.net/310519663468761794/e8xfFyW6dXJEFGQgKJqfmX/Gangrena(6)_9e4267c1.jpg",
+    "description": ""
   },
   {
-    id: 'still-8',
-    title: 'Volver pa atrás 4',
-    category: 'stills',
-    image: 'https://d2xsxph8kpxj0f.cloudfront.net/310519663468761794/e8xfFyW6dXJEFGQgKJqfmX/Volver pa atras 4_3ef4a440.webp',
-    alt: 'Still from Volver pa atrás videoclip - Scene 4'
-  },
-  // FOTOGRAFÍA - Photography
-  {
-    id: 'photo-1',
-    title: 'DJ LA FERIA',
-    category: 'fotografia',
-    image: 'https://d2xsxph8kpxj0f.cloudfront.net/310519663468761794/e8xfFyW6dXJEFGQgKJqfmX/DJ LA FERIA_ab8746ef.webp',
-    alt: 'Photography session - DJ LA FERIA',
-    featured: true,
-    aspectRatio: 'horizontal'
+    "id": 7,
+    "title": "Gangrena(7)",
+    "alt": "Gangrena(7)",
+    "category": "stills",
+    "image": "https://d2xsxph8kpxj0f.cloudfront.net/310519663468761794/e8xfFyW6dXJEFGQgKJqfmX/Gangrena(7)_b7a45a4d.jpg",
+    "description": ""
   },
   {
-    id: 'photo-2',
-    title: 'DJ LA FERIA 2',
-    category: 'fotografia',
-    image: 'https://d2xsxph8kpxj0f.cloudfront.net/310519663468761794/e8xfFyW6dXJEFGQgKJqfmX/DJ LA FERIA 2_e825276c.webp',
-    alt: 'Photography session - DJ LA FERIA 2'
+    "id": 8,
+    "title": "Gangrena(8)",
+    "alt": "Gangrena(8)",
+    "category": "stills",
+    "image": "https://d2xsxph8kpxj0f.cloudfront.net/310519663468761794/e8xfFyW6dXJEFGQgKJqfmX/Gangrena(8)_3f896b8b.jpg",
+    "description": ""
   },
   {
-    id: 'photo-3',
-    title: 'Paulito en vivo',
-    category: 'fotografia',
-    image: 'https://d2xsxph8kpxj0f.cloudfront.net/310519663468761794/e8xfFyW6dXJEFGQgKJqfmX/paulito en vivo_ddb48c0e.webp',
-    alt: 'Live photography - Paulito en vivo'
+    "id": 9,
+    "title": "Gangrena(9)",
+    "alt": "Gangrena(9)",
+    "category": "stills",
+    "image": "https://d2xsxph8kpxj0f.cloudfront.net/310519663468761794/e8xfFyW6dXJEFGQgKJqfmX/Gangrena(9)_52ecd814.jpg",
+    "description": ""
   },
   {
-    id: 'photo-4',
-    title: 'Paulito en vivo 2',
-    category: 'fotografia',
-    image: 'https://d2xsxph8kpxj0f.cloudfront.net/310519663468761794/e8xfFyW6dXJEFGQgKJqfmX/Paulito en vivo 2_0d8aaa1b.webp',
-    alt: 'Live photography - Paulito en vivo 2'
+    "id": 10,
+    "title": "Gangrena(10)",
+    "alt": "Gangrena(10)",
+    "category": "stills",
+    "image": "https://d2xsxph8kpxj0f.cloudfront.net/310519663468761794/e8xfFyW6dXJEFGQgKJqfmX/Gangrena(10)_6e5374b7.jpg",
+    "description": ""
   },
   {
-    id: 'photo-5',
-    title: 'Modelaje',
-    category: 'fotografia',
-    image: 'https://d2xsxph8kpxj0f.cloudfront.net/310519663468761794/e8xfFyW6dXJEFGQgKJqfmX/Modelaje_d00b8a52.webp',
-    alt: 'Fashion photography - Modelaje',
-    featured: true,
-    aspectRatio: 'horizontal'
+    "id": 11,
+    "title": "Gangrena(11)",
+    "alt": "Gangrena(11)",
+    "category": "stills",
+    "image": "https://d2xsxph8kpxj0f.cloudfront.net/310519663468761794/e8xfFyW6dXJEFGQgKJqfmX/Gangrena(11)_e2560c1d.jpg",
+    "description": ""
   },
   {
-    id: 'photo-6',
-    title: 'Negro tomando bebida',
-    category: 'fotografia',
-    image: 'https://d2xsxph8kpxj0f.cloudfront.net/310519663468761794/e8xfFyW6dXJEFGQgKJqfmX/Negro tomando bebida_65b6ed5b.webp',
-    alt: 'Portrait photography - Negro tomando bebida'
-  },
-  // MAKE OFF - Behind the scenes
-  {
-    id: 'makeoff-1',
-    title: 'Joaco operando',
-    category: 'makeoff',
-    image: 'https://d2xsxph8kpxj0f.cloudfront.net/310519663468761794/e8xfFyW6dXJEFGQgKJqfmX/Joaco operando_14adca45.webp',
-    alt: 'Behind the scenes - Joaco operating camera'
+    "id": 12,
+    "title": "Gangrena(12)",
+    "alt": "Gangrena(12)",
+    "category": "stills",
+    "image": "https://d2xsxph8kpxj0f.cloudfront.net/310519663468761794/e8xfFyW6dXJEFGQgKJqfmX/Gangrena(12)_dd5a2066.jpg",
+    "description": ""
   },
   {
-    id: 'makeoff-2',
-    title: 'Logo espalda',
-    category: 'makeoff',
-    image: 'https://d2xsxph8kpxj0f.cloudfront.net/310519663468761794/e8xfFyW6dXJEFGQgKJqfmX/Logo espalda_cbcd1f3b.webp',
-    alt: 'Behind the scenes - Team with logo',
-    featured: true,
-    aspectRatio: 'vertical'
+    "id": 13,
+    "title": "Gangrena(13)",
+    "alt": "Gangrena(13)",
+    "category": "stills",
+    "image": "https://d2xsxph8kpxj0f.cloudfront.net/310519663468761794/e8xfFyW6dXJEFGQgKJqfmX/Gangrena(13)_e3b245df.jpg",
+    "description": ""
   },
   {
-    id: 'makeoff-3',
-    title: 'Titi Russo',
-    category: 'makeoff',
-    image: 'https://d2xsxph8kpxj0f.cloudfront.net/310519663468761794/e8xfFyW6dXJEFGQgKJqfmX/Titi Russo_d962d52e.webp',
-    alt: 'Behind the scenes - Titi Russo'
+    "id": 14,
+    "title": "Verte Encima",
+    "alt": "Verte Encima",
+    "category": "stills",
+    "image": "https://d2xsxph8kpxj0f.cloudfront.net/310519663468761794/e8xfFyW6dXJEFGQgKJqfmX/Verte Encima_47cb45a7.jpg",
+    "description": ""
   },
   {
-    id: 'makeoff-4',
-    title: 'Titi Russo naranja',
-    category: 'makeoff',
-    image: 'https://d2xsxph8kpxj0f.cloudfront.net/310519663468761794/e8xfFyW6dXJEFGQgKJqfmX/Titi Russo naranja_b8939bd2.webp',
-    alt: 'Behind the scenes - Titi Russo with orange lighting'
+    "id": 15,
+    "title": "Verte Encima(1)",
+    "alt": "Verte Encima(1)",
+    "category": "stills",
+    "image": "https://d2xsxph8kpxj0f.cloudfront.net/310519663468761794/e8xfFyW6dXJEFGQgKJqfmX/Verte Encima(1)_a9e7ef9f.jpg",
+    "description": ""
   },
   {
-    id: 'makeoff-5',
-    title: 'Tobar operando',
-    category: 'makeoff',
-    image: 'https://d2xsxph8kpxj0f.cloudfront.net/310519663468761794/e8xfFyW6dXJEFGQgKJqfmX/Tobar operando_fa76978a.webp',
-    alt: 'Behind the scenes - Tobar operating equipment'
+    "id": 16,
+    "title": "Verte Encima(2)",
+    "alt": "Verte Encima(2)",
+    "category": "stills",
+    "image": "https://d2xsxph8kpxj0f.cloudfront.net/310519663468761794/e8xfFyW6dXJEFGQgKJqfmX/Verte Encima(2)_cbd6cd58.jpg",
+    "description": ""
   },
   {
-    id: 'makeoff-6',
-    title: 'Set shot',
-    category: 'makeoff',
-    image: 'https://d2xsxph8kpxj0f.cloudfront.net/310519663468761794/e8xfFyW6dXJEFGQgKJqfmX/_DSC4097_70a7764b.webp',
-    alt: 'Behind the scenes - Production set'
+    "id": 17,
+    "title": "Verte Encima(3)",
+    "alt": "Verte Encima(3)",
+    "category": "stills",
+    "image": "https://d2xsxph8kpxj0f.cloudfront.net/310519663468761794/e8xfFyW6dXJEFGQgKJqfmX/Verte Encima(3)_3fa5c18e.jpg",
+    "description": ""
+  },
+  {
+    "id": 18,
+    "title": "Volver pa atras",
+    "alt": "Volver pa atras",
+    "category": "stills",
+    "image": "https://d2xsxph8kpxj0f.cloudfront.net/310519663468761794/e8xfFyW6dXJEFGQgKJqfmX/Volver pa atras_6f00cbbf.jpg",
+    "description": ""
+  },
+  {
+    "id": 19,
+    "title": "Volver pa atras(1)",
+    "alt": "Volver pa atras(1)",
+    "category": "stills",
+    "image": "https://d2xsxph8kpxj0f.cloudfront.net/310519663468761794/e8xfFyW6dXJEFGQgKJqfmX/Volver pa atras(1)_3ff13338.jpg",
+    "description": ""
+  },
+  {
+    "id": 20,
+    "title": "Volver pa atras(2)",
+    "alt": "Volver pa atras(2)",
+    "category": "stills",
+    "image": "https://d2xsxph8kpxj0f.cloudfront.net/310519663468761794/e8xfFyW6dXJEFGQgKJqfmX/Volver pa atras(2)_dfcd4e75.jpg",
+    "description": ""
+  },
+  {
+    "id": 21,
+    "title": "Volver pa atras(3)",
+    "alt": "Volver pa atras(3)",
+    "category": "stills",
+    "image": "https://d2xsxph8kpxj0f.cloudfront.net/310519663468761794/e8xfFyW6dXJEFGQgKJqfmX/Volver pa atras(3)_552cc71f.jpg",
+    "description": ""
+  },
+  {
+    "id": 22,
+    "title": "Paisajismo",
+    "alt": "Paisajismo",
+    "category": "fotografia",
+    "image": "https://d2xsxph8kpxj0f.cloudfront.net/310519663468761794/e8xfFyW6dXJEFGQgKJqfmX/Paisajismo_e8a5abd7.jpg",
+    "description": ""
+  },
+  {
+    "id": 23,
+    "title": "Paisajismo(1)",
+    "alt": "Paisajismo(1)",
+    "category": "fotografia",
+    "image": "https://d2xsxph8kpxj0f.cloudfront.net/310519663468761794/e8xfFyW6dXJEFGQgKJqfmX/Paisajismo(1)_03d856bb.jpg",
+    "description": ""
+  },
+  {
+    "id": 24,
+    "title": "Registro DJ La Feria",
+    "alt": "Registro DJ La Feria",
+    "category": "fotografia",
+    "image": "https://d2xsxph8kpxj0f.cloudfront.net/310519663468761794/e8xfFyW6dXJEFGQgKJqfmX/Registro DJ La Feria_2585c6f7.jpg",
+    "description": ""
+  },
+  {
+    "id": 25,
+    "title": "Registro DJ La Feria(1)",
+    "alt": "Registro DJ La Feria(1)",
+    "category": "fotografia",
+    "image": "https://d2xsxph8kpxj0f.cloudfront.net/310519663468761794/e8xfFyW6dXJEFGQgKJqfmX/Registro DJ La Feria(1)_27b4b97a.jpg",
+    "description": ""
+  },
+  {
+    "id": 26,
+    "title": "Registro Paxlito en Vivo",
+    "alt": "Registro Paxlito en Vivo",
+    "category": "fotografia",
+    "image": "https://d2xsxph8kpxj0f.cloudfront.net/310519663468761794/e8xfFyW6dXJEFGQgKJqfmX/Registro Paxlito en Vivo_3fc3e3a5.jpg",
+    "description": ""
+  },
+  {
+    "id": 27,
+    "title": "Registro Paxlito en Vivo(1)",
+    "alt": "Registro Paxlito en Vivo(1)",
+    "category": "fotografia",
+    "image": "https://d2xsxph8kpxj0f.cloudfront.net/310519663468761794/e8xfFyW6dXJEFGQgKJqfmX/Registro Paxlito en Vivo(1)_3a2bfece.jpg",
+    "description": ""
+  },
+  {
+    "id": 28,
+    "title": "Sesión de Fotos",
+    "alt": "Sesión de Fotos",
+    "category": "fotografia",
+    "image": "https://d2xsxph8kpxj0f.cloudfront.net/310519663468761794/e8xfFyW6dXJEFGQgKJqfmX/Sesión de Fotos_14c70d1b.jpg",
+    "description": ""
+  },
+  {
+    "id": 29,
+    "title": "Sesión de Fotos(1)",
+    "alt": "Sesión de Fotos(1)",
+    "category": "fotografia",
+    "image": "https://d2xsxph8kpxj0f.cloudfront.net/310519663468761794/e8xfFyW6dXJEFGQgKJqfmX/Sesión de Fotos(1)_6273493a.jpg",
+    "description": ""
+  },
+  {
+    "id": 30,
+    "title": "Sesión de Fotos(2)",
+    "alt": "Sesión de Fotos(2)",
+    "category": "fotografia",
+    "image": "https://d2xsxph8kpxj0f.cloudfront.net/310519663468761794/e8xfFyW6dXJEFGQgKJqfmX/Sesión de Fotos(2)_eabc29ea.jpg",
+    "description": ""
+  },
+  {
+    "id": 31,
+    "title": "Sesión de Fotos(3)",
+    "alt": "Sesión de Fotos(3)",
+    "category": "fotografia",
+    "image": "https://d2xsxph8kpxj0f.cloudfront.net/310519663468761794/e8xfFyW6dXJEFGQgKJqfmX/Sesión de Fotos(3)_fb6442a2.jpg",
+    "description": ""
+  },
+  {
+    "id": 32,
+    "title": "Sesión de Fotos(4)",
+    "alt": "Sesión de Fotos(4)",
+    "category": "fotografia",
+    "image": "https://d2xsxph8kpxj0f.cloudfront.net/310519663468761794/e8xfFyW6dXJEFGQgKJqfmX/Sesión de Fotos(4)_a9e5f3e3.jpg",
+    "description": ""
+  },
+  {
+    "id": 33,
+    "title": "Sesión de Fotos(5)",
+    "alt": "Sesión de Fotos(5)",
+    "category": "fotografia",
+    "image": "https://d2xsxph8kpxj0f.cloudfront.net/310519663468761794/e8xfFyW6dXJEFGQgKJqfmX/Sesión de Fotos(5)_bbbd5ac2.jpg",
+    "description": ""
+  },
+  {
+    "id": 34,
+    "title": "Sesión de Fotos(6)",
+    "alt": "Sesión de Fotos(6)",
+    "category": "fotografia",
+    "image": "https://d2xsxph8kpxj0f.cloudfront.net/310519663468761794/e8xfFyW6dXJEFGQgKJqfmX/Sesión de Fotos(6)_0009fa98.jpg",
+    "description": ""
+  },
+  {
+    "id": 35,
+    "title": "Sesión de Fotos(7)",
+    "alt": "Sesión de Fotos(7)",
+    "category": "fotografia",
+    "image": "https://d2xsxph8kpxj0f.cloudfront.net/310519663468761794/e8xfFyW6dXJEFGQgKJqfmX/Sesión de Fotos(7)_3a514a08.jpg",
+    "description": ""
+  },
+  {
+    "id": 36,
+    "title": "Sesión de Fotos(8)",
+    "alt": "Sesión de Fotos(8)",
+    "category": "fotografia",
+    "image": "https://d2xsxph8kpxj0f.cloudfront.net/310519663468761794/e8xfFyW6dXJEFGQgKJqfmX/Sesión de Fotos(8)_eb98c83a.jpg",
+    "description": ""
+  },
+  {
+    "id": 37,
+    "title": "Sesión de Fotos(9)",
+    "alt": "Sesión de Fotos(9)",
+    "category": "fotografia",
+    "image": "https://d2xsxph8kpxj0f.cloudfront.net/310519663468761794/e8xfFyW6dXJEFGQgKJqfmX/Sesión de Fotos(9)_78d4ca72.jpg",
+    "description": ""
+  },
+  {
+    "id": 38,
+    "title": "Sesión de Fotos(10)",
+    "alt": "Sesión de Fotos(10)",
+    "category": "fotografia",
+    "image": "https://d2xsxph8kpxj0f.cloudfront.net/310519663468761794/e8xfFyW6dXJEFGQgKJqfmX/Sesión de Fotos(10)_893c54f6.jpg",
+    "description": ""
+  },
+  {
+    "id": 39,
+    "title": "Sesión de Fotos(11)",
+    "alt": "Sesión de Fotos(11)",
+    "category": "fotografia",
+    "image": "https://d2xsxph8kpxj0f.cloudfront.net/310519663468761794/e8xfFyW6dXJEFGQgKJqfmX/Sesión de Fotos(11)_3f0dcf76.jpg",
+    "description": ""
+  },
+  {
+    "id": 40,
+    "title": "Sesión de Fotos(12)",
+    "alt": "Sesión de Fotos(12)",
+    "category": "fotografia",
+    "image": "https://d2xsxph8kpxj0f.cloudfront.net/310519663468761794/e8xfFyW6dXJEFGQgKJqfmX/Sesión de Fotos(12)_1c1129c6.jpg",
+    "description": ""
+  },
+  {
+    "id": 41,
+    "title": "Sesión de Fotos(13)",
+    "alt": "Sesión de Fotos(13)",
+    "category": "fotografia",
+    "image": "https://d2xsxph8kpxj0f.cloudfront.net/310519663468761794/e8xfFyW6dXJEFGQgKJqfmX/Sesión de Fotos(13)_4956c6be.jpg",
+    "description": ""
+  },
+  {
+    "id": 42,
+    "title": "Sesión de Fotos(14)",
+    "alt": "Sesión de Fotos(14)",
+    "category": "fotografia",
+    "image": "https://d2xsxph8kpxj0f.cloudfront.net/310519663468761794/e8xfFyW6dXJEFGQgKJqfmX/Sesión de Fotos(14)_c666742c.jpg",
+    "description": ""
+  },
+  {
+    "id": 43,
+    "title": "Sesión de Fotos(15)",
+    "alt": "Sesión de Fotos(15)",
+    "category": "fotografia",
+    "image": "https://d2xsxph8kpxj0f.cloudfront.net/310519663468761794/e8xfFyW6dXJEFGQgKJqfmX/Sesión de Fotos(15)_d335eefb.jpg",
+    "description": ""
+  },
+  {
+    "id": 44,
+    "title": "Sesión de Fotos(16)",
+    "alt": "Sesión de Fotos(16)",
+    "category": "fotografia",
+    "image": "https://d2xsxph8kpxj0f.cloudfront.net/310519663468761794/e8xfFyW6dXJEFGQgKJqfmX/Sesión de Fotos(16)_28819e6d.jpg",
+    "description": ""
+  },
+  {
+    "id": 45,
+    "title": "Sesión de Fotos(17)",
+    "alt": "Sesión de Fotos(17)",
+    "category": "fotografia",
+    "image": "https://d2xsxph8kpxj0f.cloudfront.net/310519663468761794/e8xfFyW6dXJEFGQgKJqfmX/Sesión de Fotos(17)_1301044d.jpg",
+    "description": ""
+  },
+  {
+    "id": 46,
+    "title": "Sesión de Fotos(18)",
+    "alt": "Sesión de Fotos(18)",
+    "category": "fotografia",
+    "image": "https://d2xsxph8kpxj0f.cloudfront.net/310519663468761794/e8xfFyW6dXJEFGQgKJqfmX/Sesión de Fotos(18)_edbf21fd.jpg",
+    "description": ""
+  },
+  {
+    "id": 47,
+    "title": "Sesión de Fotos(19)",
+    "alt": "Sesión de Fotos(19)",
+    "category": "fotografia",
+    "image": "https://d2xsxph8kpxj0f.cloudfront.net/310519663468761794/e8xfFyW6dXJEFGQgKJqfmX/Sesión de Fotos(19)_b6a9d1dd.jpg",
+    "description": ""
+  },
+  {
+    "id": 48,
+    "title": "Detrás de cámara _Verte Encima_",
+    "alt": "Detrás de cámara _Verte Encima_",
+    "category": "makeoff",
+    "image": "https://d2xsxph8kpxj0f.cloudfront.net/310519663468761794/e8xfFyW6dXJEFGQgKJqfmX/Detrás de cámara _Verte Encima__b1145525.jpg",
+    "description": ""
+  },
+  {
+    "id": 49,
+    "title": "Detrás de cámara _Verte Encima_(1)",
+    "alt": "Detrás de cámara _Verte Encima_(1)",
+    "category": "makeoff",
+    "image": "https://d2xsxph8kpxj0f.cloudfront.net/310519663468761794/e8xfFyW6dXJEFGQgKJqfmX/Detrás de cámara _Verte Encima_(1)_35e679b6.jpg",
+    "description": ""
+  },
+  {
+    "id": 50,
+    "title": "Equipo de Arte",
+    "alt": "Equipo de Arte",
+    "category": "makeoff",
+    "image": "https://d2xsxph8kpxj0f.cloudfront.net/310519663468761794/e8xfFyW6dXJEFGQgKJqfmX/Equipo de Arte_d9470b98.jpg",
+    "description": ""
   }
 ];
 
 export const getCategoryLabel = (category: string): string => {
   const labels: Record<string, string> = {
-    stills: 'Stills',
-    fotografia: 'Fotografía',
-    makeoff: 'Make Off'
+    stills: 'STILLS',
+    fotografia: 'FOTOGRAFÍA',
+    makeoff: 'MAKE OFF'
   };
   return labels[category] || category;
 };
