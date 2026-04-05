@@ -414,7 +414,63 @@ export const portfolioItems: PortfolioItem[] = [
     "title": "Equipo de Arte",
     "alt": "Equipo de Arte",
     "category": "makeoff",
-    "image": "https://d2xsxph8kpxj0f.cloudfront.net/310519663468761794/e8xfFyW6dXJEFGQgKJqfmX/Equipo de Arte_d9470b98.jpg",
+    "image": "https://d2xsxph8kpxj0f.cloudfront.net/310519663468761794/e8xfFyW6dXJEFGQgKJqfmX/Equipo de Arte_a1cb4a15.jpg",
+    "description": ""
+  },
+  {
+    "id": 51,
+    "title": "Equipo iluminacion",
+    "alt": "Equipo iluminacion",
+    "category": "makeoff",
+    "image": "https://d2xsxph8kpxj0f.cloudfront.net/310519663468761794/e8xfFyW6dXJEFGQgKJqfmX/Equipo iluminacion_6f8c6b83.jpg",
+    "description": ""
+  },
+  {
+    "id": 52,
+    "title": "Nuestro equipo",
+    "alt": "Nuestro equipo",
+    "category": "makeoff",
+    "image": "https://d2xsxph8kpxj0f.cloudfront.net/310519663468761794/e8xfFyW6dXJEFGQgKJqfmX/Nuestro equipo_57fbbd4f.jpg",
+    "description": ""
+  },
+  {
+    "id": 53,
+    "title": "Operador de Camara _Voy y Vuelvo_",
+    "alt": "Operador de Camara _Voy y Vuelvo_",
+    "category": "makeoff",
+    "image": "https://d2xsxph8kpxj0f.cloudfront.net/310519663468761794/e8xfFyW6dXJEFGQgKJqfmX/Operador de camara _Voy y Vuelvo__06a90e5d.jpg",
+    "description": ""
+  },
+  {
+    "id": 54,
+    "title": "Operador de Camara _Voy y Vuelvo_(1)",
+    "alt": "Operador de Camara _Voy y Vuelvo_(1)",
+    "category": "makeoff",
+    "image": "https://d2xsxph8kpxj0f.cloudfront.net/310519663468761794/e8xfFyW6dXJEFGQgKJqfmX/Operador de Camara _Voy y Vuelvo_(1)_e41ec5e5.jpg",
+    "description": ""
+  },
+  {
+    "id": 55,
+    "title": "Prueba de Iluminacion",
+    "alt": "Prueba de Iluminacion",
+    "category": "makeoff",
+    "image": "https://d2xsxph8kpxj0f.cloudfront.net/310519663468761794/e8xfFyW6dXJEFGQgKJqfmX/Prueba de Iluminacion_a8a131e4.jpg",
+    "description": ""
+  },
+  {
+    "id": 56,
+    "title": "Prueba de Iluminacion(1)",
+    "alt": "Prueba de Iluminacion(1)",
+    "category": "makeoff",
+    "image": "https://d2xsxph8kpxj0f.cloudfront.net/310519663468761794/e8xfFyW6dXJEFGQgKJqfmX/Prueba de Iluminacion(1)_0764c211.jpg",
+    "description": ""
+  },
+  {
+    "id": 57,
+    "title": "Detrás de Cámara _Voy y Vuelvo_",
+    "alt": "Detrás de Cámara _Voy y Vuelvo_",
+    "category": "makeoff",
+    "image": "https://d2xsxph8kpxj0f.cloudfront.net/310519663468761794/e8xfFyW6dXJEFGQgKJqfmX/Detrás de Cámara _Voy y Vuelvo__e362e07b.jpg",
     "description": ""
   }
 ];
