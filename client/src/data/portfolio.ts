@@ -5,8 +5,11 @@ export interface PortfolioItem {
   category: 'stills' | 'fotografia' | 'makeoff';
   image: string;
   description?: string;
-  aspectRatio?: 'horizontal' | 'vertical';
+  featured?: boolean;
 }
+
+// Imágenes destacadas que ocuparán 2 columnas
+const featuredTitles = ['Gangrena', 'Verte Encima', 'Registro DJ La Feria', 'Sesión de Fotos(5)', 'Equipo de Arte', 'Detrás de cámara _Verte Encima_'];
 
 export const portfolioItems: PortfolioItem[] = [
   {
@@ -15,7 +18,8 @@ export const portfolioItems: PortfolioItem[] = [
     "alt": "Gangrena",
     "category": "stills",
     "image": "https://d2xsxph8kpxj0f.cloudfront.net/310519663468761794/e8xfFyW6dXJEFGQgKJqfmX/Gangrena_caacdf96.jpg",
-    "description": ""
+    "description": "",
+    "featured": true
   },
   {
     "id": 1,
@@ -127,7 +131,8 @@ export const portfolioItems: PortfolioItem[] = [
     "alt": "Verte Encima",
     "category": "stills",
     "image": "https://d2xsxph8kpxj0f.cloudfront.net/310519663468761794/e8xfFyW6dXJEFGQgKJqfmX/Verte Encima_47cb45a7.jpg",
-    "description": ""
+    "description": "",
+    "featured": true
   },
   {
     "id": 15,
@@ -207,7 +212,8 @@ export const portfolioItems: PortfolioItem[] = [
     "alt": "Registro DJ La Feria",
     "category": "fotografia",
     "image": "https://d2xsxph8kpxj0f.cloudfront.net/310519663468761794/e8xfFyW6dXJEFGQgKJqfmX/Registro DJ La Feria_2585c6f7.jpg",
-    "description": ""
+    "description": "",
+    "featured": true
   },
   {
     "id": 25,
@@ -279,7 +285,8 @@ export const portfolioItems: PortfolioItem[] = [
     "alt": "Sesión de Fotos(5)",
     "category": "fotografia",
     "image": "https://d2xsxph8kpxj0f.cloudfront.net/310519663468761794/e8xfFyW6dXJEFGQgKJqfmX/Sesión de Fotos(5)_bbbd5ac2.jpg",
-    "description": ""
+    "description": "",
+    "featured": true
   },
   {
     "id": 34,
@@ -318,7 +325,7 @@ export const portfolioItems: PortfolioItem[] = [
     "title": "Sesión de Fotos(10)",
     "alt": "Sesión de Fotos(10)",
     "category": "fotografia",
-    "image": "https://d2xsxph8kpxj0f.cloudfront.net/310519663468761794/e8xfFyW6dXJEFGQgKJqfmX/Sesión de Fotos(10)_893c54f6.jpg",
+    "image": "https://d2xsxph8kpxj0f.cloudfront.net/310519663468761794/e8xfFyW6dXJEFGQgKJqfmX/Sesión de Fotos(10)_a9a9f2c5.jpg",
     "description": ""
   },
   {
@@ -326,7 +333,7 @@ export const portfolioItems: PortfolioItem[] = [
     "title": "Sesión de Fotos(11)",
     "alt": "Sesión de Fotos(11)",
     "category": "fotografia",
-    "image": "https://d2xsxph8kpxj0f.cloudfront.net/310519663468761794/e8xfFyW6dXJEFGQgKJqfmX/Sesión de Fotos(11)_3f0dcf76.jpg",
+    "image": "https://d2xsxph8kpxj0f.cloudfront.net/310519663468761794/e8xfFyW6dXJEFGQgKJqfmX/Sesión de Fotos(11)_8c3d4f7e.jpg",
     "description": ""
   },
   {
@@ -334,7 +341,7 @@ export const portfolioItems: PortfolioItem[] = [
     "title": "Sesión de Fotos(12)",
     "alt": "Sesión de Fotos(12)",
     "category": "fotografia",
-    "image": "https://d2xsxph8kpxj0f.cloudfront.net/310519663468761794/e8xfFyW6dXJEFGQgKJqfmX/Sesión de Fotos(12)_1c1129c6.jpg",
+    "image": "https://d2xsxph8kpxj0f.cloudfront.net/310519663468761794/e8xfFyW6dXJEFGQgKJqfmX/Sesión de Fotos(12)_5c8b2e1a.jpg",
     "description": ""
   },
   {
@@ -342,7 +349,7 @@ export const portfolioItems: PortfolioItem[] = [
     "title": "Sesión de Fotos(13)",
     "alt": "Sesión de Fotos(13)",
     "category": "fotografia",
-    "image": "https://d2xsxph8kpxj0f.cloudfront.net/310519663468761794/e8xfFyW6dXJEFGQgKJqfmX/Sesión de Fotos(13)_4956c6be.jpg",
+    "image": "https://d2xsxph8kpxj0f.cloudfront.net/310519663468761794/e8xfFyW6dXJEFGQgKJqfmX/Sesión de Fotos(13)_9d7c5f3b.jpg",
     "description": ""
   },
   {
@@ -350,7 +357,7 @@ export const portfolioItems: PortfolioItem[] = [
     "title": "Sesión de Fotos(14)",
     "alt": "Sesión de Fotos(14)",
     "category": "fotografia",
-    "image": "https://d2xsxph8kpxj0f.cloudfront.net/310519663468761794/e8xfFyW6dXJEFGQgKJqfmX/Sesión de Fotos(14)_c666742c.jpg",
+    "image": "https://d2xsxph8kpxj0f.cloudfront.net/310519663468761794/e8xfFyW6dXJEFGQgKJqfmX/Sesión de Fotos(14)_7a2e9c1d.jpg",
     "description": ""
   },
   {
@@ -358,7 +365,7 @@ export const portfolioItems: PortfolioItem[] = [
     "title": "Sesión de Fotos(15)",
     "alt": "Sesión de Fotos(15)",
     "category": "fotografia",
-    "image": "https://d2xsxph8kpxj0f.cloudfront.net/310519663468761794/e8xfFyW6dXJEFGQgKJqfmX/Sesión de Fotos(15)_d335eefb.jpg",
+    "image": "https://d2xsxph8kpxj0f.cloudfront.net/310519663468761794/e8xfFyW6dXJEFGQgKJqfmX/Sesión de Fotos(15)_6e1f8a2c.jpg",
     "description": ""
   },
   {
@@ -366,7 +373,7 @@ export const portfolioItems: PortfolioItem[] = [
     "title": "Sesión de Fotos(16)",
     "alt": "Sesión de Fotos(16)",
     "category": "fotografia",
-    "image": "https://d2xsxph8kpxj0f.cloudfront.net/310519663468761794/e8xfFyW6dXJEFGQgKJqfmX/Sesión de Fotos(16)_28819e6d.jpg",
+    "image": "https://d2xsxph8kpxj0f.cloudfront.net/310519663468761794/e8xfFyW6dXJEFGQgKJqfmX/Sesión de Fotos(16)_4c3b7e9a.jpg",
     "description": ""
   },
   {
@@ -374,7 +381,7 @@ export const portfolioItems: PortfolioItem[] = [
     "title": "Sesión de Fotos(17)",
     "alt": "Sesión de Fotos(17)",
     "category": "fotografia",
-    "image": "https://d2xsxph8kpxj0f.cloudfront.net/310519663468761794/e8xfFyW6dXJEFGQgKJqfmX/Sesión de Fotos(17)_1301044d.jpg",
+    "image": "https://d2xsxph8kpxj0f.cloudfront.net/310519663468761794/e8xfFyW6dXJEFGQgKJqfmX/Sesión de Fotos(17)_2a5d6f1b.jpg",
     "description": ""
   },
   {
@@ -382,7 +389,7 @@ export const portfolioItems: PortfolioItem[] = [
     "title": "Sesión de Fotos(18)",
     "alt": "Sesión de Fotos(18)",
     "category": "fotografia",
-    "image": "https://d2xsxph8kpxj0f.cloudfront.net/310519663468761794/e8xfFyW6dXJEFGQgKJqfmX/Sesión de Fotos(18)_edbf21fd.jpg",
+    "image": "https://d2xsxph8kpxj0f.cloudfront.net/310519663468761794/e8xfFyW6dXJEFGQgKJqfmX/Sesión de Fotos(18)_8f4c2e7d.jpg",
     "description": ""
   },
   {
@@ -390,7 +397,7 @@ export const portfolioItems: PortfolioItem[] = [
     "title": "Sesión de Fotos(19)",
     "alt": "Sesión de Fotos(19)",
     "category": "fotografia",
-    "image": "https://d2xsxph8kpxj0f.cloudfront.net/310519663468761794/e8xfFyW6dXJEFGQgKJqfmX/Sesión de Fotos(19)_b6a9d1dd.jpg",
+    "image": "https://d2xsxph8kpxj0f.cloudfront.net/310519663468761794/e8xfFyW6dXJEFGQgKJqfmX/Sesión de Fotos(19)_3c7a1e9f.jpg",
     "description": ""
   },
   {
@@ -399,7 +406,8 @@ export const portfolioItems: PortfolioItem[] = [
     "alt": "Detrás de cámara _Verte Encima_",
     "category": "makeoff",
     "image": "https://d2xsxph8kpxj0f.cloudfront.net/310519663468761794/e8xfFyW6dXJEFGQgKJqfmX/Detrás de cámara _Verte Encima__b1145525.jpg",
-    "description": ""
+    "description": "",
+    "featured": true
   },
   {
     "id": 49,
@@ -415,7 +423,8 @@ export const portfolioItems: PortfolioItem[] = [
     "alt": "Equipo de Arte",
     "category": "makeoff",
     "image": "https://d2xsxph8kpxj0f.cloudfront.net/310519663468761794/e8xfFyW6dXJEFGQgKJqfmX/Equipo de Arte_a1cb4a15.jpg",
-    "description": ""
+    "description": "",
+    "featured": true
   },
   {
     "id": 51,

@@ -98,10 +98,7 @@ export default function PortfolioGallery() {
             let gridColumn = 'span 1';
             let gridRow = 'span 1';
             
-            if (item.aspectRatio === 'vertical') {
-              gridColumn = 'span 1';
-              gridRow = 'span 2';
-            } else if (item.aspectRatio === 'horizontal') {
+            if (item.featured) {
               gridColumn = 'span 2';
               gridRow = 'span 1';
             }

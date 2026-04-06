@@ -1,7 +1,7 @@
 import PortfolioGallery from '@/components/PortfolioGallery';
 
 /**
- * Home Page - Nebula Portfolio
+ * Home Page - Vortex Portfolio
  * 
  * Design Philosophy: Cinemática Oscura
  * - Dark, immersive aesthetic inspired by film production
@@ -17,13 +17,13 @@ export default function Home() {
       <header className="sticky top-0 z-50 backdrop-blur-sm border-b" style={{ backgroundColor: 'rgba(10, 10, 10, 0.95)', borderColor: '#1C1C1E' }}>
         <div className="container mx-auto px-4 py-4 flex items-center justify-between">
           <div className="flex items-center gap-3">
-            {/* Nebula Logo */}
+            {/* Vortex Logo */}
             <img 
-              src="https://d2xsxph8kpxj0f.cloudfront.net/310519663468761794/e8xfFyW6dXJEFGQgKJqfmX/NEBULAVISIONSTUDIOCNPNG(1)_b589fbab.webp" 
-              alt="Nebula Logo" 
+              src="https://d2xsxph8kpxj0f.cloudfront.net/310519663468761794/e8xfFyW6dXJEFGQgKJqfmX/logovortexconfondo_4e3f4956.webp" 
+              alt="Vortex Logo" 
               className="h-10 w-auto"
             />
-            <h1 className="text-xl tracking-widest" style={{ fontFamily: "'Inter', system-ui, -apple-system, sans-serif", color: '#FFFFFF', fontWeight: 600 }}>NEBULA</h1>
+            <h1 className="text-xl tracking-widest" style={{ fontFamily: "'Inter', system-ui, -apple-system, sans-serif", color: '#FFFFFF', fontWeight: 600 }}>VORTEX</h1>
           </div>
           
           <nav className="hidden md:flex gap-8">
@@ -50,11 +50,11 @@ export default function Home() {
             <div>
               <div className="flex items-center gap-3 mb-4">
                 <img 
-                  src="https://d2xsxph8kpxj0f.cloudfront.net/310519663468761794/e8xfFyW6dXJEFGQgKJqfmX/NEBULAVISIONSTUDIOCNPNG(1)_b589fbab.webp" 
-                  alt="Nebula Logo" 
+                  src="https://d2xsxph8kpxj0f.cloudfront.net/310519663468761794/e8xfFyW6dXJEFGQgKJqfmX/logovortexconfondo_4e3f4956.webp" 
+                  alt="Vortex Logo" 
                   className="h-8 w-auto"
                 />
-                <h3 className="text-lg tracking-widest" style={{ fontFamily: "'Inter', system-ui, -apple-system, sans-serif", color: '#FFFFFF', fontWeight: 600 }}>NEBULA</h3>
+                <h3 className="text-lg tracking-widest" style={{ fontFamily: "'Inter', system-ui, -apple-system, sans-serif", color: '#FFFFFF', fontWeight: 600 }}>VORTEX</h3>
               </div>
               <p className="text-sm" style={{ color: '#A1A1AA', fontFamily: "'Inter', system-ui, -apple-system, sans-serif" }}>
                 Productora audiovisual chilena especializada en videoclips musicales y contenido cinematográfico.
@@ -94,7 +94,7 @@ export default function Home() {
                 </li>
                 <li>Santiago, Chile</li>
                 <li className="text-xs mt-4" style={{ color: 'rgba(161, 161, 170, 0.7)' }}>
-                  © 2026 Nebula Vision Studio. Todos los derechos reservados.
+                  © 2026 Vortex Studio. Todos los derechos reservados.
                 </li>
               </ul>
             </div>
