@@ -2,6 +2,11 @@ import { useState, useRef } from 'react';
 import { portfolioItems, getCategoryLabel, PortfolioItem } from '@/data/portfolio';
 import ImageModal from './ImageModal';
 
+// Función para ocultar números entre paréntesis en los títulos
+const getDisplayTitle = (title: string) => {
+  return title.replace(/\(\d+\)$/g, '').trim();
+};
+
 export default function PortfolioGallery() {
   const [activeCategory, setActiveCategory] = useState('all');
   const [selectedItem, setSelectedItem] = useState<PortfolioItem | null>(null);
@@ -140,7 +145,7 @@ export default function PortfolioGallery() {
                   {/* Overlay on Hover */}
                   <div className="absolute inset-0 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex flex-col justify-end p-4" style={{ background: 'linear-gradient(to top, rgba(10, 10, 10, 0.9), rgba(10, 10, 10, 0.4), transparent)' }}>
                     <h3 className="text-white text-sm md:text-base tracking-wider" style={{ fontFamily: "'Inter', system-ui, -apple-system, sans-serif", fontWeight: 600 }}>
-                      {item.title}
+                      {getDisplayTitle(item.title)}
                     </h3>
                     <p className="text-xs md:text-sm" style={{ color: '#F59E0B', fontFamily: "'Inter', system-ui, -apple-system, sans-serif", fontWeight: 500 }}>
                       {getCategoryLabel(item.category)}

@@ -2,6 +2,11 @@ import { useState, useEffect } from 'react';
 import { X, ChevronLeft, ChevronRight } from 'lucide-react';
 import { PortfolioItem } from '@/data/portfolio';
 
+// Función para ocultar números entre paréntesis en los títulos
+const getDisplayTitle = (title: string) => {
+  return title.replace(/\(\d+\)$/g, '').trim();
+};
+
 interface ImageModalProps {
   item: PortfolioItem | null;
   isOpen: boolean;
@@ -158,7 +163,7 @@ export default function ImageModal({ item, isOpen, onClose, onNext, onPrev, clic
           className="text-lg md:text-xl text-white font-bold"
           style={{ fontFamily: "'Inter', system-ui, -apple-system, sans-serif" }}
         >
-          {item.title}
+          {getDisplayTitle(item.title)}
         </h2>
         {item.description && (
           <p
