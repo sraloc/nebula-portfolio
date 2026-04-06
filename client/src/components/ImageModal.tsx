@@ -158,7 +158,7 @@ export default function ImageModal({ item, isOpen, onClose, onNext, onPrev, clic
           className="text-lg md:text-xl text-white font-bold"
           style={{ fontFamily: "'Inter', system-ui, -apple-system, sans-serif" }}
         >
-          {item.title}
+          {item.title.replace(/\(\d+\)/g, '')}
         </h2>
         {item.description && (
           <p
