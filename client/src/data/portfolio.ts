@@ -23,7 +23,7 @@ export const portfolioItems: PortfolioItem[] = [
   },
   {
     "id": 1,
-    "title": "Gangrena(1)",
+    "title": "Gangrena",
     "alt": "Gangrena",
     "category": "stills",
     "image": "https://d2xsxph8kpxj0f.cloudfront.net/310519663468761794/e8xfFyW6dXJEFGQgKJqfmX/Gangrena_ef755613.jpg",
@@ -31,7 +31,7 @@ export const portfolioItems: PortfolioItem[] = [
   },
   {
     "id": 2,
-    "title": "Gangrena(2)",
+    "title": "Gangrena",
     "alt": "Gangrena",
     "category": "stills",
     "image": "https://d2xsxph8kpxj0f.cloudfront.net/310519663468761794/e8xfFyW6dXJEFGQgKJqfmX/Gangrena_be9623f6.jpg",
@@ -39,7 +39,7 @@ export const portfolioItems: PortfolioItem[] = [
   },
   {
     "id": 3,
-    "title": "Gangrena(3)",
+    "title": "Gangrena",
     "alt": "Gangrena",
     "category": "stills",
     "image": "https://d2xsxph8kpxj0f.cloudfront.net/310519663468761794/e8xfFyW6dXJEFGQgKJqfmX/Gangrena_a229d670.jpg",
@@ -47,7 +47,7 @@ export const portfolioItems: PortfolioItem[] = [
   },
   {
     "id": 4,
-    "title": "Gangrena(4)",
+    "title": "Gangrena",
     "alt": "Gangrena",
     "category": "stills",
     "image": "https://d2xsxph8kpxj0f.cloudfront.net/310519663468761794/e8xfFyW6dXJEFGQgKJqfmX/Gangrena_6786ed6f.jpg",
@@ -55,7 +55,7 @@ export const portfolioItems: PortfolioItem[] = [
   },
   {
     "id": 5,
-    "title": "Gangrena(5)",
+    "title": "Gangrena",
     "alt": "Gangrena",
     "category": "stills",
     "image": "https://d2xsxph8kpxj0f.cloudfront.net/310519663468761794/e8xfFyW6dXJEFGQgKJqfmX/Gangrena_20c60440.jpg",
@@ -63,7 +63,7 @@ export const portfolioItems: PortfolioItem[] = [
   },
   {
     "id": 6,
-    "title": "Gangrena(6)",
+    "title": "Gangrena",
     "alt": "Gangrena",
     "category": "stills",
     "image": "https://d2xsxph8kpxj0f.cloudfront.net/310519663468761794/e8xfFyW6dXJEFGQgKJqfmX/Gangrena_9e4267c1.jpg",
@@ -71,7 +71,7 @@ export const portfolioItems: PortfolioItem[] = [
   },
   {
     "id": 7,
-    "title": "Gangrena(7)",
+    "title": "Gangrena",
     "alt": "Gangrena",
     "category": "stills",
     "image": "https://d2xsxph8kpxj0f.cloudfront.net/310519663468761794/e8xfFyW6dXJEFGQgKJqfmX/Gangrena_b7a45a4d.jpg",
@@ -79,7 +79,7 @@ export const portfolioItems: PortfolioItem[] = [
   },
   {
     "id": 8,
-    "title": "Gangrena(8)",
+    "title": "Gangrena",
     "alt": "Gangrena",
     "category": "stills",
     "image": "https://d2xsxph8kpxj0f.cloudfront.net/310519663468761794/e8xfFyW6dXJEFGQgKJqfmX/Gangrena_3f896b8b.jpg",
@@ -87,7 +87,7 @@ export const portfolioItems: PortfolioItem[] = [
   },
   {
     "id": 9,
-    "title": "Gangrena(9)",
+    "title": "Gangrena",
     "alt": "Gangrena",
     "category": "stills",
     "image": "https://d2xsxph8kpxj0f.cloudfront.net/310519663468761794/e8xfFyW6dXJEFGQgKJqfmX/Gangrena_52ecd814.jpg",
@@ -95,7 +95,7 @@ export const portfolioItems: PortfolioItem[] = [
   },
   {
     "id": 10,
-    "title": "Gangrena(10)",
+    "title": "Gangrena",
     "alt": "Gangrena",
     "category": "stills",
     "image": "https://d2xsxph8kpxj0f.cloudfront.net/310519663468761794/e8xfFyW6dXJEFGQgKJqfmX/Gangrena_6e5374b7.jpg",
@@ -103,7 +103,7 @@ export const portfolioItems: PortfolioItem[] = [
   },
   {
     "id": 11,
-    "title": "Gangrena(11)",
+    "title": "Gangrena",
     "alt": "Gangrena",
     "category": "stills",
     "image": "https://d2xsxph8kpxj0f.cloudfront.net/310519663468761794/e8xfFyW6dXJEFGQgKJqfmX/Gangrena_e2560c1d.jpg",
@@ -111,7 +111,7 @@ export const portfolioItems: PortfolioItem[] = [
   },
   {
     "id": 12,
-    "title": "Gangrena(12)",
+    "title": "Gangrena",
     "alt": "Gangrena",
     "category": "stills",
     "image": "https://d2xsxph8kpxj0f.cloudfront.net/310519663468761794/e8xfFyW6dXJEFGQgKJqfmX/Gangrena_dd5a2066.jpg",
@@ -119,7 +119,7 @@ export const portfolioItems: PortfolioItem[] = [
   },
   {
     "id": 13,
-    "title": "Gangrena(13)",
+    "title": "Gangrena",
     "alt": "Gangrena",
     "category": "stills",
     "image": "https://d2xsxph8kpxj0f.cloudfront.net/310519663468761794/e8xfFyW6dXJEFGQgKJqfmX/Gangrena_e3b245df.jpg",
@@ -136,7 +136,7 @@ export const portfolioItems: PortfolioItem[] = [
   },
   {
     "id": 15,
-    "title": "Verte Encima(1)",
+    "title": "Verte Encima",
     "alt": "Verte Encima",
     "category": "stills",
     "image": "https://d2xsxph8kpxj0f.cloudfront.net/310519663468761794/e8xfFyW6dXJEFGQgKJqfmX/Verte Encima_a9e7ef9f.jpg",
@@ -144,7 +144,7 @@ export const portfolioItems: PortfolioItem[] = [
   },
   {
     "id": 16,
-    "title": "Verte Encima(2)",
+    "title": "Verte Encima",
     "alt": "Verte Encima",
     "category": "stills",
     "image": "https://d2xsxph8kpxj0f.cloudfront.net/310519663468761794/e8xfFyW6dXJEFGQgKJqfmX/Verte Encima_cbd6cd58.jpg",
@@ -152,7 +152,7 @@ export const portfolioItems: PortfolioItem[] = [
   },
   {
     "id": 17,
-    "title": "Verte Encima(3)",
+    "title": "Verte Encima",
     "alt": "Verte Encima",
     "category": "stills",
     "image": "https://d2xsxph8kpxj0f.cloudfront.net/310519663468761794/e8xfFyW6dXJEFGQgKJqfmX/Verte Encima_3fa5c18e.jpg",
@@ -168,7 +168,7 @@ export const portfolioItems: PortfolioItem[] = [
   },
   {
     "id": 19,
-    "title": "Volver pa atras(1)",
+    "title": "Volver pa atras",
     "alt": "Volver pa atras",
     "category": "stills",
     "image": "https://d2xsxph8kpxj0f.cloudfront.net/310519663468761794/e8xfFyW6dXJEFGQgKJqfmX/Volver pa atras_3ff13338.jpg",
@@ -176,7 +176,7 @@ export const portfolioItems: PortfolioItem[] = [
   },
   {
     "id": 20,
-    "title": "Volver pa atras(2)",
+    "title": "Volver pa atras",
     "alt": "Volver pa atras",
     "category": "stills",
     "image": "https://d2xsxph8kpxj0f.cloudfront.net/310519663468761794/e8xfFyW6dXJEFGQgKJqfmX/Volver pa atras_dfcd4e75.jpg",
@@ -184,7 +184,7 @@ export const portfolioItems: PortfolioItem[] = [
   },
   {
     "id": 21,
-    "title": "Volver pa atras(3)",
+    "title": "Volver pa atras",
     "alt": "Volver pa atras",
     "category": "stills",
     "image": "https://d2xsxph8kpxj0f.cloudfront.net/310519663468761794/e8xfFyW6dXJEFGQgKJqfmX/Volver pa atras_552cc71f.jpg",
@@ -200,7 +200,7 @@ export const portfolioItems: PortfolioItem[] = [
   },
   {
     "id": 23,
-    "title": "Paisajismo(1)",
+    "title": "Paisajismo",
     "alt": "Paisajismo",
     "category": "fotografia",
     "image": "https://d2xsxph8kpxj0f.cloudfront.net/310519663468761794/e8xfFyW6dXJEFGQgKJqfmX/Paisajismo_03d856bb.jpg",
@@ -217,7 +217,7 @@ export const portfolioItems: PortfolioItem[] = [
   },
   {
     "id": 25,
-    "title": "Registro DJ La Feria(1)",
+    "title": "Registro DJ La Feria",
     "alt": "Registro DJ La Feria",
     "category": "fotografia",
     "image": "https://d2xsxph8kpxj0f.cloudfront.net/310519663468761794/e8xfFyW6dXJEFGQgKJqfmX/Registro DJ La Feria_27b4b97a.jpg",
@@ -233,7 +233,7 @@ export const portfolioItems: PortfolioItem[] = [
   },
   {
     "id": 27,
-    "title": "Registro Paxlito en Vivo(1)",
+    "title": "Registro Paxlito en Vivo",
     "alt": "Registro Paxlito en Vivo",
     "category": "fotografia",
     "image": "https://d2xsxph8kpxj0f.cloudfront.net/310519663468761794/e8xfFyW6dXJEFGQgKJqfmX/Registro Paxlito en Vivo_3a2bfece.jpg",
@@ -249,7 +249,7 @@ export const portfolioItems: PortfolioItem[] = [
   },
   {
     "id": 29,
-    "title": "Sesión de Fotos(1)",
+    "title": "Sesión de Fotos",
     "alt": "Sesión de Fotos",
     "category": "fotografia",
     "image": "https://d2xsxph8kpxj0f.cloudfront.net/310519663468761794/e8xfFyW6dXJEFGQgKJqfmX/Sesión de Fotos_6273493a.jpg",
@@ -257,7 +257,7 @@ export const portfolioItems: PortfolioItem[] = [
   },
   {
     "id": 30,
-    "title": "Sesión de Fotos(2)",
+    "title": "Sesión de Fotos",
     "alt": "Sesión de Fotos",
     "category": "fotografia",
     "image": "https://d2xsxph8kpxj0f.cloudfront.net/310519663468761794/e8xfFyW6dXJEFGQgKJqfmX/Sesión de Fotos_eabc29ea.jpg",
@@ -265,7 +265,7 @@ export const portfolioItems: PortfolioItem[] = [
   },
   {
     "id": 31,
-    "title": "Sesión de Fotos(3)",
+    "title": "Sesión de Fotos",
     "alt": "Sesión de Fotos",
     "category": "fotografia",
     "image": "https://d2xsxph8kpxj0f.cloudfront.net/310519663468761794/e8xfFyW6dXJEFGQgKJqfmX/Sesión de Fotos_fb6442a2.jpg",
@@ -273,7 +273,7 @@ export const portfolioItems: PortfolioItem[] = [
   },
   {
     "id": 32,
-    "title": "Sesión de Fotos(4)",
+    "title": "Sesión de Fotos",
     "alt": "Sesión de Fotos",
     "category": "fotografia",
     "image": "https://d2xsxph8kpxj0f.cloudfront.net/310519663468761794/e8xfFyW6dXJEFGQgKJqfmX/Sesión de Fotos_a9e5f3e3.jpg",
@@ -281,7 +281,7 @@ export const portfolioItems: PortfolioItem[] = [
   },
   {
     "id": 33,
-    "title": "Sesión de Fotos(5)",
+    "title": "Sesión de Fotos",
     "alt": "Sesión de Fotos",
     "category": "fotografia",
     "image": "https://d2xsxph8kpxj0f.cloudfront.net/310519663468761794/e8xfFyW6dXJEFGQgKJqfmX/Sesión de Fotos_bbbd5ac2.jpg",
@@ -290,7 +290,7 @@ export const portfolioItems: PortfolioItem[] = [
   },
   {
     "id": 34,
-    "title": "Sesión de Fotos(6)",
+    "title": "Sesión de Fotos",
     "alt": "Sesión de Fotos",
     "category": "fotografia",
     "image": "https://d2xsxph8kpxj0f.cloudfront.net/310519663468761794/e8xfFyW6dXJEFGQgKJqfmX/Sesión de Fotos_0009fa98.jpg",
@@ -298,7 +298,7 @@ export const portfolioItems: PortfolioItem[] = [
   },
   {
     "id": 35,
-    "title": "Sesión de Fotos(7)",
+    "title": "Sesión de Fotos",
     "alt": "Sesión de Fotos",
     "category": "fotografia",
     "image": "https://d2xsxph8kpxj0f.cloudfront.net/310519663468761794/e8xfFyW6dXJEFGQgKJqfmX/Sesión de Fotos_3a514a08.jpg",
@@ -306,7 +306,7 @@ export const portfolioItems: PortfolioItem[] = [
   },
   {
     "id": 36,
-    "title": "Sesión de Fotos(8)",
+    "title": "Sesión de Fotos",
     "alt": "Sesión de Fotos",
     "category": "fotografia",
     "image": "https://d2xsxph8kpxj0f.cloudfront.net/310519663468761794/e8xfFyW6dXJEFGQgKJqfmX/Sesión de Fotos_eb98c83a.jpg",
@@ -314,7 +314,7 @@ export const portfolioItems: PortfolioItem[] = [
   },
   {
     "id": 37,
-    "title": "Sesión de Fotos(9)",
+    "title": "Sesión de Fotos",
     "alt": "Sesión de Fotos",
     "category": "fotografia",
     "image": "https://d2xsxph8kpxj0f.cloudfront.net/310519663468761794/e8xfFyW6dXJEFGQgKJqfmX/Sesión de Fotos_78d4ca72.jpg",
@@ -322,7 +322,7 @@ export const portfolioItems: PortfolioItem[] = [
   },
   {
     "id": 38,
-    "title": "Sesión de Fotos(10)",
+    "title": "Sesión de Fotos",
     "alt": "Sesión de Fotos",
     "category": "fotografia",
     "image": "https://d2xsxph8kpxj0f.cloudfront.net/310519663468761794/e8xfFyW6dXJEFGQgKJqfmX/Sesión de Fotos_a9a9f2c5.jpg",
@@ -330,7 +330,7 @@ export const portfolioItems: PortfolioItem[] = [
   },
   {
     "id": 39,
-    "title": "Sesión de Fotos(11)",
+    "title": "Sesión de Fotos",
     "alt": "Sesión de Fotos",
     "category": "fotografia",
     "image": "https://d2xsxph8kpxj0f.cloudfront.net/310519663468761794/e8xfFyW6dXJEFGQgKJqfmX/Sesión de Fotos_8c3d4f7e.jpg",
@@ -338,7 +338,7 @@ export const portfolioItems: PortfolioItem[] = [
   },
   {
     "id": 40,
-    "title": "Sesión de Fotos(12)",
+    "title": "Sesión de Fotos",
     "alt": "Sesión de Fotos",
     "category": "fotografia",
     "image": "https://d2xsxph8kpxj0f.cloudfront.net/310519663468761794/e8xfFyW6dXJEFGQgKJqfmX/Sesión de Fotos_5c8b2e1a.jpg",
@@ -346,7 +346,7 @@ export const portfolioItems: PortfolioItem[] = [
   },
   {
     "id": 41,
-    "title": "Sesión de Fotos(13)",
+    "title": "Sesión de Fotos",
     "alt": "Sesión de Fotos",
     "category": "fotografia",
     "image": "https://d2xsxph8kpxj0f.cloudfront.net/310519663468761794/e8xfFyW6dXJEFGQgKJqfmX/Sesión de Fotos_9d7c5f3b.jpg",
@@ -354,7 +354,7 @@ export const portfolioItems: PortfolioItem[] = [
   },
   {
     "id": 42,
-    "title": "Sesión de Fotos(14)",
+    "title": "Sesión de Fotos",
     "alt": "Sesión de Fotos",
     "category": "fotografia",
     "image": "https://d2xsxph8kpxj0f.cloudfront.net/310519663468761794/e8xfFyW6dXJEFGQgKJqfmX/Sesión de Fotos_7a2e9c1d.jpg",
@@ -362,7 +362,7 @@ export const portfolioItems: PortfolioItem[] = [
   },
   {
     "id": 43,
-    "title": "Sesión de Fotos(15)",
+    "title": "Sesión de Fotos",
     "alt": "Sesión de Fotos",
     "category": "fotografia",
     "image": "https://d2xsxph8kpxj0f.cloudfront.net/310519663468761794/e8xfFyW6dXJEFGQgKJqfmX/Sesión de Fotos_6e1f8a2c.jpg",
@@ -370,7 +370,7 @@ export const portfolioItems: PortfolioItem[] = [
   },
   {
     "id": 44,
-    "title": "Sesión de Fotos(16)",
+    "title": "Sesión de Fotos",
     "alt": "Sesión de Fotos",
     "category": "fotografia",
     "image": "https://d2xsxph8kpxj0f.cloudfront.net/310519663468761794/e8xfFyW6dXJEFGQgKJqfmX/Sesión de Fotos_4c3b7e9a.jpg",
@@ -378,7 +378,7 @@ export const portfolioItems: PortfolioItem[] = [
   },
   {
     "id": 45,
-    "title": "Sesión de Fotos(17)",
+    "title": "Sesión de Fotos",
     "alt": "Sesión de Fotos",
     "category": "fotografia",
     "image": "https://d2xsxph8kpxj0f.cloudfront.net/310519663468761794/e8xfFyW6dXJEFGQgKJqfmX/Sesión de Fotos_2a5d6f1b.jpg",
@@ -386,7 +386,7 @@ export const portfolioItems: PortfolioItem[] = [
   },
   {
     "id": 46,
-    "title": "Sesión de Fotos(18)",
+    "title": "Sesión de Fotos",
     "alt": "Sesión de Fotos",
     "category": "fotografia",
     "image": "https://d2xsxph8kpxj0f.cloudfront.net/310519663468761794/e8xfFyW6dXJEFGQgKJqfmX/Sesión de Fotos_8f4c2e7d.jpg",
@@ -394,7 +394,7 @@ export const portfolioItems: PortfolioItem[] = [
   },
   {
     "id": 47,
-    "title": "Sesión de Fotos(19)",
+    "title": "Sesión de Fotos",
     "alt": "Sesión de Fotos",
     "category": "fotografia",
     "image": "https://d2xsxph8kpxj0f.cloudfront.net/310519663468761794/e8xfFyW6dXJEFGQgKJqfmX/Sesión de Fotos_3c7a1e9f.jpg",
@@ -411,7 +411,7 @@ export const portfolioItems: PortfolioItem[] = [
   },
   {
     "id": 49,
-    "title": "Detrás de cámara _Verte Encima_(1)",
+    "title": "Detrás de cámara _Verte Encima_",
     "alt": "Detrás de cámara _Verte Encima_",
     "category": "makeoff",
     "image": "https://d2xsxph8kpxj0f.cloudfront.net/310519663468761794/e8xfFyW6dXJEFGQgKJqfmX/Detrás de cámara _Verte Encima__35e679b6.jpg",
@@ -452,7 +452,7 @@ export const portfolioItems: PortfolioItem[] = [
   },
   {
     "id": 54,
-    "title": "Operador de Camara _Voy y Vuelvo_(1)",
+    "title": "Operador de Camara _Voy y Vuelvo_",
     "alt": "Operador de Camara _Voy y Vuelvo_",
     "category": "makeoff",
     "image": "https://d2xsxph8kpxj0f.cloudfront.net/310519663468761794/e8xfFyW6dXJEFGQgKJqfmX/Operador de Camara _Voy y Vuelvo__e41ec5e5.jpg",
@@ -468,7 +468,7 @@ export const portfolioItems: PortfolioItem[] = [
   },
   {
     "id": 56,
-    "title": "Prueba de Iluminacion(1)",
+    "title": "Prueba de Iluminacion",
     "alt": "Prueba de Iluminacion",
     "category": "makeoff",
     "image": "https://d2xsxph8kpxj0f.cloudfront.net/310519663468761794/e8xfFyW6dXJEFGQgKJqfmX/Prueba de Iluminacion_0764c211.jpg",
