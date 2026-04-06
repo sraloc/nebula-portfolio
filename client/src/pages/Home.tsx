@@ -19,7 +19,7 @@ export default function Home() {
           <div className="flex items-center gap-3">
             {/* Vortex Logo */}
             <img 
-              src="https://d2xsxph8kpxj0f.cloudfront.net/310519663468761794/e8xfFyW6dXJEFGQgKJqfmX/logovortexconfondo_4e3f4956.webp" 
+              src="https://d2xsxph8kpxj0f.cloudfront.net/310519663468761794/e8xfFyW6dXJEFGQgKJqfmX/VORTEXESTUDIOLOGO_e553bb67.png" 
               alt="Vortex Logo" 
               className="h-10 w-auto"
             />
@@ -50,7 +50,7 @@ export default function Home() {
             <div>
               <div className="flex items-center gap-3 mb-4">
                 <img 
-                  src="https://d2xsxph8kpxj0f.cloudfront.net/310519663468761794/e8xfFyW6dXJEFGQgKJqfmX/logovortexconfondo_4e3f4956.webp" 
+                  src="https://d2xsxph8kpxj0f.cloudfront.net/310519663468761794/e8xfFyW6dXJEFGQgKJqfmX/VORTEXESTUDIOLOGO_e553bb67.png" 
                   alt="Vortex Logo" 
                   className="h-8 w-auto"
                 />
