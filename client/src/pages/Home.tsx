@@ -19,7 +19,7 @@ export default function Home() {
           <div className="flex items-center gap-3">
             {/* Vortex Logo */}
             <img 
-              src="https://d2xsxph8kpxj0f.cloudfront.net/310519663468761794/e8xfFyW6dXJEFGQgKJqfmX/logovortexconfondo_4e3f4956.webp" 
+              src="https://d2xsxph8kpxj0f.cloudfront.net/310519663468761794/e8xfFyW6dXJEFGQgKJqfmX/VORTEXESTUDIOLOGOrgb_67e041e9.png" 
               alt="Vortex Logo" 
               className="h-10 w-auto"
             />
@@ -50,7 +50,7 @@ export default function Home() {
             <div>
               <div className="flex items-center gap-3 mb-4">
                 <img 
-                  src="https://d2xsxph8kpxj0f.cloudfront.net/310519663468761794/e8xfFyW6dXJEFGQgKJqfmX/logovortexconfondo_4e3f4956.webp" 
+                  src="https://d2xsxph8kpxj0f.cloudfront.net/310519663468761794/e8xfFyW6dXJEFGQgKJqfmX/VORTEXESTUDIOLOGOrgb_67e041e9.png" 
                   alt="Vortex Logo" 
                   className="h-8 w-auto"
                 />
@@ -75,11 +75,6 @@ export default function Home() {
                     Portafolio Completo
                   </a>
                 </li>
-                <li>
-                  <a href="https://sraloc.github.io/nebulaweb/#contacto" className="transition-colors text-sm" style={{ color: '#A1A1AA', fontFamily: "'Inter', system-ui, -apple-system, sans-serif" }} onMouseEnter={(e) => e.currentTarget.style.color = '#D946EF'} onMouseLeave={(e) => e.currentTarget.style.color = '#A1A1AA'}>
-                    Contacto
-                  </a>
-                </li>
               </ul>
             </div>
 
@@ -88,8 +83,8 @@ export default function Home() {
               <h4 className="text-sm tracking-wider mb-4" style={{ fontFamily: "'Inter', system-ui, -apple-system, sans-serif", color: '#FFFFFF', fontWeight: 600 }}>CONTACTO</h4>
               <ul className="space-y-2 text-sm" style={{ color: '#A1A1AA', fontFamily: "'Inter', system-ui, -apple-system, sans-serif" }}>
                 <li>
-                  <a href="mailto:contacto@nebulavision.cl" className="transition-colors" style={{ color: '#A1A1AA' }} onMouseEnter={(e) => e.currentTarget.style.color = '#D946EF'} onMouseLeave={(e) => e.currentTarget.style.color = '#A1A1AA'}>
-                    contacto@nebulavision.cl
+                  <a href="mailto:Productora@vortexcine.com" className="transition-colors" style={{ color: '#A1A1AA' }} onMouseEnter={(e) => e.currentTarget.style.color = '#D946EF'} onMouseLeave={(e) => e.currentTarget.style.color = '#A1A1AA'}>
+                    Productora@vortexcine.com
                   </a>
                 </li>
                 <li>Santiago, Chile</li>

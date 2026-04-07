@@ -130,7 +130,7 @@ export const portfolioItems: PortfolioItem[] = [
     "title": "Verte Encima",
     "alt": "Verte Encima",
     "category": "stills",
-    "image": "https://d2xsxph8kpxj0f.cloudfront.net/310519663468761794/e8xfFyW6dXJEFGQgKJqfmX/Verte Encima_47cb45a7.jpg",
+    "image": "https://d2xsxph8kpxj0f.cloudfront.net/310519663468761794/e8xfFyW6dXJEFGQgKJqfmX/Verte%20Encima_47cb45a7.jpg",
     "description": "",
     "featured": true
   },
@@ -139,7 +139,7 @@ export const portfolioItems: PortfolioItem[] = [
     "title": "Verte Encima(1)",
     "alt": "Verte Encima(1)",
     "category": "stills",
-    "image": "https://d2xsxph8kpxj0f.cloudfront.net/310519663468761794/e8xfFyW6dXJEFGQgKJqfmX/Verte Encima(1)_a9e7ef9f.jpg",
+    "image": "https://d2xsxph8kpxj0f.cloudfront.net/310519663468761794/e8xfFyW6dXJEFGQgKJqfmX/Verte%20Encima(1)_a9e7ef9f.jpg",
     "description": ""
   },
   {
@@ -147,7 +147,7 @@ export const portfolioItems: PortfolioItem[] = [
     "title": "Verte Encima(2)",
     "alt": "Verte Encima(2)",
     "category": "stills",
-    "image": "https://d2xsxph8kpxj0f.cloudfront.net/310519663468761794/e8xfFyW6dXJEFGQgKJqfmX/Verte Encima(2)_cbd6cd58.jpg",
+    "image": "https://d2xsxph8kpxj0f.cloudfront.net/310519663468761794/e8xfFyW6dXJEFGQgKJqfmX/Verte%20Encima(2)_cbd6cd58.jpg",
     "description": ""
   },
   {
@@ -155,7 +155,7 @@ export const portfolioItems: PortfolioItem[] = [
     "title": "Verte Encima(3)",
     "alt": "Verte Encima(3)",
     "category": "stills",
-    "image": "https://d2xsxph8kpxj0f.cloudfront.net/310519663468761794/e8xfFyW6dXJEFGQgKJqfmX/Verte Encima(3)_3fa5c18e.jpg",
+    "image": "https://d2xsxph8kpxj0f.cloudfront.net/310519663468761794/e8xfFyW6dXJEFGQgKJqfmX/Verte%20Encima(3)_3fa5c18e.jpg",
     "description": ""
   },
   {
@@ -163,7 +163,7 @@ export const portfolioItems: PortfolioItem[] = [
     "title": "Volver pa atras",
     "alt": "Volver pa atras",
     "category": "stills",
-    "image": "https://d2xsxph8kpxj0f.cloudfront.net/310519663468761794/e8xfFyW6dXJEFGQgKJqfmX/Volver pa atras_6f00cbbf.jpg",
+    "image": "https://d2xsxph8kpxj0f.cloudfront.net/310519663468761794/e8xfFyW6dXJEFGQgKJqfmX/Volver%20pa%20atras_6f00cbbf.jpg",
     "description": ""
   },
   {
@@ -171,7 +171,7 @@ export const portfolioItems: PortfolioItem[] = [
     "title": "Volver pa atras(1)",
     "alt": "Volver pa atras(1)",
     "category": "stills",
-    "image": "https://d2xsxph8kpxj0f.cloudfront.net/310519663468761794/e8xfFyW6dXJEFGQgKJqfmX/Volver pa atras(1)_3ff13338.jpg",
+    "image": "https://d2xsxph8kpxj0f.cloudfront.net/310519663468761794/e8xfFyW6dXJEFGQgKJqfmX/Volver%20pa%20atras(1)_3ff13338.jpg",
     "description": ""
   },
   {
@@ -179,7 +179,7 @@ export const portfolioItems: PortfolioItem[] = [
     "title": "Volver pa atras(2)",
     "alt": "Volver pa atras(2)",
     "category": "stills",
-    "image": "https://d2xsxph8kpxj0f.cloudfront.net/310519663468761794/e8xfFyW6dXJEFGQgKJqfmX/Volver pa atras(2)_dfcd4e75.jpg",
+    "image": "https://d2xsxph8kpxj0f.cloudfront.net/310519663468761794/e8xfFyW6dXJEFGQgKJqfmX/Volver%20pa%20atras(2)_dfcd4e75.jpg",
     "description": ""
   },
   {
@@ -187,7 +187,7 @@ export const portfolioItems: PortfolioItem[] = [
     "title": "Volver pa atras(3)",
     "alt": "Volver pa atras(3)",
     "category": "stills",
-    "image": "https://d2xsxph8kpxj0f.cloudfront.net/310519663468761794/e8xfFyW6dXJEFGQgKJqfmX/Volver pa atras(3)_552cc71f.jpg",
+    "image": "https://d2xsxph8kpxj0f.cloudfront.net/310519663468761794/e8xfFyW6dXJEFGQgKJqfmX/Volver%20pa%20atras(3)_552cc71f.jpg",
     "description": ""
   },
   {
@@ -211,7 +211,7 @@ export const portfolioItems: PortfolioItem[] = [
     "title": "Registro DJ La Feria",
     "alt": "Registro DJ La Feria",
     "category": "fotografia",
-    "image": "https://d2xsxph8kpxj0f.cloudfront.net/310519663468761794/e8xfFyW6dXJEFGQgKJqfmX/Registro DJ La Feria_2585c6f7.jpg",
+    "image": "https://d2xsxph8kpxj0f.cloudfront.net/310519663468761794/e8xfFyW6dXJEFGQgKJqfmX/Registro%20DJ%20La%20Feria_2585c6f7.jpg",
     "description": "",
     "featured": true
   },
@@ -220,7 +220,7 @@ export const portfolioItems: PortfolioItem[] = [
     "title": "Registro DJ La Feria(1)",
     "alt": "Registro DJ La Feria(1)",
     "category": "fotografia",
-    "image": "https://d2xsxph8kpxj0f.cloudfront.net/310519663468761794/e8xfFyW6dXJEFGQgKJqfmX/Registro DJ La Feria(1)_27b4b97a.jpg",
+    "image": "https://d2xsxph8kpxj0f.cloudfront.net/310519663468761794/e8xfFyW6dXJEFGQgKJqfmX/Registro%20DJ%20La%20Feria(1)_27b4b97a.jpg",
     "description": ""
   },
   {
@@ -228,7 +228,7 @@ export const portfolioItems: PortfolioItem[] = [
     "title": "Registro Paxlito en Vivo",
     "alt": "Registro Paxlito en Vivo",
     "category": "fotografia",
-    "image": "https://d2xsxph8kpxj0f.cloudfront.net/310519663468761794/e8xfFyW6dXJEFGQgKJqfmX/Registro Paxlito en Vivo_3fc3e3a5.jpg",
+    "image": "https://d2xsxph8kpxj0f.cloudfront.net/310519663468761794/e8xfFyW6dXJEFGQgKJqfmX/Registro%20Paxlito%20en%20Vivo_3fc3e3a5.jpg",
     "description": ""
   },
   {
@@ -236,7 +236,7 @@ export const portfolioItems: PortfolioItem[] = [
     "title": "Registro Paxlito en Vivo(1)",
     "alt": "Registro Paxlito en Vivo(1)",
     "category": "fotografia",
-    "image": "https://d2xsxph8kpxj0f.cloudfront.net/310519663468761794/e8xfFyW6dXJEFGQgKJqfmX/Registro Paxlito en Vivo(1)_3a2bfece.jpg",
+    "image": "https://d2xsxph8kpxj0f.cloudfront.net/310519663468761794/e8xfFyW6dXJEFGQgKJqfmX/Registro%20Paxlito%20en%20Vivo(1)_3a2bfece.jpg",
     "description": ""
   },
   {
@@ -244,7 +244,7 @@ export const portfolioItems: PortfolioItem[] = [
     "title": "Sesión de Fotos",
     "alt": "Sesión de Fotos",
     "category": "fotografia",
-    "image": "https://d2xsxph8kpxj0f.cloudfront.net/310519663468761794/e8xfFyW6dXJEFGQgKJqfmX/Sesión de Fotos_14c70d1b.jpg",
+    "image": "https://d2xsxph8kpxj0f.cloudfront.net/310519663468761794/e8xfFyW6dXJEFGQgKJqfmX/Sesión%20de%20Fotos_14c70d1b.jpg",
     "description": ""
   },
   {
@@ -252,7 +252,7 @@ export const portfolioItems: PortfolioItem[] = [
     "title": "Sesión de Fotos(1)",
     "alt": "Sesión de Fotos(1)",
     "category": "fotografia",
-    "image": "https://d2xsxph8kpxj0f.cloudfront.net/310519663468761794/e8xfFyW6dXJEFGQgKJqfmX/Sesión de Fotos(1)_6273493a.jpg",
+    "image": "https://d2xsxph8kpxj0f.cloudfront.net/310519663468761794/e8xfFyW6dXJEFGQgKJqfmX/Sesión%20de%20Fotos(1)_6273493a.jpg",
     "description": ""
   },
   {
@@ -260,7 +260,7 @@ export const portfolioItems: PortfolioItem[] = [
     "title": "Sesión de Fotos(2)",
     "alt": "Sesión de Fotos(2)",
     "category": "fotografia",
-    "image": "https://d2xsxph8kpxj0f.cloudfront.net/310519663468761794/e8xfFyW6dXJEFGQgKJqfmX/Sesión de Fotos(2)_eabc29ea.jpg",
+    "image": "https://d2xsxph8kpxj0f.cloudfront.net/310519663468761794/e8xfFyW6dXJEFGQgKJqfmX/Sesión%20de%20Fotos(2)_eabc29ea.jpg",
     "description": ""
   },
   {
@@ -268,7 +268,7 @@ export const portfolioItems: PortfolioItem[] = [
     "title": "Sesión de Fotos(3)",
     "alt": "Sesión de Fotos(3)",
     "category": "fotografia",
-    "image": "https://d2xsxph8kpxj0f.cloudfront.net/310519663468761794/e8xfFyW6dXJEFGQgKJqfmX/Sesión de Fotos(3)_fb6442a2.jpg",
+    "image": "https://d2xsxph8kpxj0f.cloudfront.net/310519663468761794/e8xfFyW6dXJEFGQgKJqfmX/Sesión%20de%20Fotos(3)_fb6442a2.jpg",
     "description": ""
   },
   {
@@ -276,7 +276,7 @@ export const portfolioItems: PortfolioItem[] = [
     "title": "Sesión de Fotos(4)",
     "alt": "Sesión de Fotos(4)",
     "category": "fotografia",
-    "image": "https://d2xsxph8kpxj0f.cloudfront.net/310519663468761794/e8xfFyW6dXJEFGQgKJqfmX/Sesión de Fotos(4)_a9e5f3e3.jpg",
+    "image": "https://d2xsxph8kpxj0f.cloudfront.net/310519663468761794/e8xfFyW6dXJEFGQgKJqfmX/Sesión%20de%20Fotos(4)_a9e5f3e3.jpg",
     "description": ""
   },
   {
@@ -284,7 +284,7 @@ export const portfolioItems: PortfolioItem[] = [
     "title": "Sesión de Fotos(5)",
     "alt": "Sesión de Fotos(5)",
     "category": "fotografia",
-    "image": "https://d2xsxph8kpxj0f.cloudfront.net/310519663468761794/e8xfFyW6dXJEFGQgKJqfmX/Sesión de Fotos(5)_bbbd5ac2.jpg",
+    "image": "https://d2xsxph8kpxj0f.cloudfront.net/310519663468761794/e8xfFyW6dXJEFGQgKJqfmX/Sesión%20de%20Fotos(5)_bbbd5ac2.jpg",
     "description": "",
     "featured": true
   },
@@ -293,7 +293,7 @@ export const portfolioItems: PortfolioItem[] = [
     "title": "Sesión de Fotos(6)",
     "alt": "Sesión de Fotos(6)",
     "category": "fotografia",
-    "image": "https://d2xsxph8kpxj0f.cloudfront.net/310519663468761794/e8xfFyW6dXJEFGQgKJqfmX/Sesión de Fotos(6)_0009fa98.jpg",
+    "image": "https://d2xsxph8kpxj0f.cloudfront.net/310519663468761794/e8xfFyW6dXJEFGQgKJqfmX/Sesión%20de%20Fotos(6)_0009fa98.jpg",
     "description": ""
   },
   {
@@ -301,7 +301,7 @@ export const portfolioItems: PortfolioItem[] = [
     "title": "Sesión de Fotos(7)",
     "alt": "Sesión de Fotos(7)",
     "category": "fotografia",
-    "image": "https://d2xsxph8kpxj0f.cloudfront.net/310519663468761794/e8xfFyW6dXJEFGQgKJqfmX/Sesión de Fotos(7)_3a514a08.jpg",
+    "image": "https://d2xsxph8kpxj0f.cloudfront.net/310519663468761794/e8xfFyW6dXJEFGQgKJqfmX/Sesión%20de%20Fotos(7)_3a514a08.jpg",
     "description": ""
   },
   {
@@ -309,7 +309,7 @@ export const portfolioItems: PortfolioItem[] = [
     "title": "Sesión de Fotos(8)",
     "alt": "Sesión de Fotos(8)",
     "category": "fotografia",
-    "image": "https://d2xsxph8kpxj0f.cloudfront.net/310519663468761794/e8xfFyW6dXJEFGQgKJqfmX/Sesión de Fotos(8)_eb98c83a.jpg",
+    "image": "https://d2xsxph8kpxj0f.cloudfront.net/310519663468761794/e8xfFyW6dXJEFGQgKJqfmX/Sesión%20de%20Fotos(8)_eb98c83a.jpg",
     "description": ""
   },
   {
@@ -317,7 +317,7 @@ export const portfolioItems: PortfolioItem[] = [
     "title": "Sesión de Fotos(9)",
     "alt": "Sesión de Fotos(9)",
     "category": "fotografia",
-    "image": "https://d2xsxph8kpxj0f.cloudfront.net/310519663468761794/e8xfFyW6dXJEFGQgKJqfmX/Sesión de Fotos(9)_78d4ca72.jpg",
+    "image": "https://d2xsxph8kpxj0f.cloudfront.net/310519663468761794/e8xfFyW6dXJEFGQgKJqfmX/Sesión%20de%20Fotos(9)_78d4ca72.jpg",
     "description": ""
   },
   {
@@ -325,7 +325,7 @@ export const portfolioItems: PortfolioItem[] = [
     "title": "Sesión de Fotos(10)",
     "alt": "Sesión de Fotos(10)",
     "category": "fotografia",
-    "image": "https://d2xsxph8kpxj0f.cloudfront.net/310519663468761794/e8xfFyW6dXJEFGQgKJqfmX/Sesión de Fotos(10)_a9a9f2c5.jpg",
+    "image": "https://d2xsxph8kpxj0f.cloudfront.net/310519663468761794/e8xfFyW6dXJEFGQgKJqfmX/Sesión%20de%20Fotos(10)_a9a9f2c5.jpg",
     "description": ""
   },
   {
@@ -333,7 +333,7 @@ export const portfolioItems: PortfolioItem[] = [
     "title": "Sesión de Fotos(11)",
     "alt": "Sesión de Fotos(11)",
     "category": "fotografia",
-    "image": "https://d2xsxph8kpxj0f.cloudfront.net/310519663468761794/e8xfFyW6dXJEFGQgKJqfmX/Sesión de Fotos(11)_8c3d4f7e.jpg",
+    "image": "https://d2xsxph8kpxj0f.cloudfront.net/310519663468761794/e8xfFyW6dXJEFGQgKJqfmX/Sesión%20de%20Fotos(11)_8c3d4f7e.jpg",
     "description": ""
   },
   {
@@ -341,7 +341,7 @@ export const portfolioItems: PortfolioItem[] = [
     "title": "Sesión de Fotos(12)",
     "alt": "Sesión de Fotos(12)",
     "category": "fotografia",
-    "image": "https://d2xsxph8kpxj0f.cloudfront.net/310519663468761794/e8xfFyW6dXJEFGQgKJqfmX/Sesión de Fotos(12)_5c8b2e1a.jpg",
+    "image": "https://d2xsxph8kpxj0f.cloudfront.net/310519663468761794/e8xfFyW6dXJEFGQgKJqfmX/Sesión%20de%20Fotos(12)_5c8b2e1a.jpg",
     "description": ""
   },
   {
@@ -349,7 +349,7 @@ export const portfolioItems: PortfolioItem[] = [
     "title": "Sesión de Fotos(13)",
     "alt": "Sesión de Fotos(13)",
     "category": "fotografia",
-    "image": "https://d2xsxph8kpxj0f.cloudfront.net/310519663468761794/e8xfFyW6dXJEFGQgKJqfmX/Sesión de Fotos(13)_9d7c5f3b.jpg",
+    "image": "https://d2xsxph8kpxj0f.cloudfront.net/310519663468761794/e8xfFyW6dXJEFGQgKJqfmX/Sesión%20de%20Fotos(13)_9d7c5f3b.jpg",
     "description": ""
   },
   {
@@ -357,7 +357,7 @@ export const portfolioItems: PortfolioItem[] = [
     "title": "Sesión de Fotos(14)",
     "alt": "Sesión de Fotos(14)",
     "category": "fotografia",
-    "image": "https://d2xsxph8kpxj0f.cloudfront.net/310519663468761794/e8xfFyW6dXJEFGQgKJqfmX/Sesión de Fotos(14)_7a2e9c1d.jpg",
+    "image": "https://d2xsxph8kpxj0f.cloudfront.net/310519663468761794/e8xfFyW6dXJEFGQgKJqfmX/Sesión%20de%20Fotos(14)_7a2e9c1d.jpg",
     "description": ""
   },
   {
@@ -365,7 +365,7 @@ export const portfolioItems: PortfolioItem[] = [
     "title": "Sesión de Fotos(15)",
     "alt": "Sesión de Fotos(15)",
     "category": "fotografia",
-    "image": "https://d2xsxph8kpxj0f.cloudfront.net/310519663468761794/e8xfFyW6dXJEFGQgKJqfmX/Sesión de Fotos(15)_6e1f8a2c.jpg",
+    "image": "https://d2xsxph8kpxj0f.cloudfront.net/310519663468761794/e8xfFyW6dXJEFGQgKJqfmX/Sesión%20de%20Fotos(15)_6e1f8a2c.jpg",
     "description": ""
   },
   {
@@ -373,7 +373,7 @@ export const portfolioItems: PortfolioItem[] = [
     "title": "Sesión de Fotos(16)",
     "alt": "Sesión de Fotos(16)",
     "category": "fotografia",
-    "image": "https://d2xsxph8kpxj0f.cloudfront.net/310519663468761794/e8xfFyW6dXJEFGQgKJqfmX/Sesión de Fotos(16)_4c3b7e9a.jpg",
+    "image": "https://d2xsxph8kpxj0f.cloudfront.net/310519663468761794/e8xfFyW6dXJEFGQgKJqfmX/Sesión%20de%20Fotos(16)_4c3b7e9a.jpg",
     "description": ""
   },
   {
@@ -381,7 +381,7 @@ export const portfolioItems: PortfolioItem[] = [
     "title": "Sesión de Fotos(17)",
     "alt": "Sesión de Fotos(17)",
     "category": "fotografia",
-    "image": "https://d2xsxph8kpxj0f.cloudfront.net/310519663468761794/e8xfFyW6dXJEFGQgKJqfmX/Sesión de Fotos(17)_2a5d6f1b.jpg",
+    "image": "https://d2xsxph8kpxj0f.cloudfront.net/310519663468761794/e8xfFyW6dXJEFGQgKJqfmX/Sesión%20de%20Fotos(17)_2a5d6f1b.jpg",
     "description": ""
   },
   {
@@ -389,7 +389,7 @@ export const portfolioItems: PortfolioItem[] = [
     "title": "Sesión de Fotos(18)",
     "alt": "Sesión de Fotos(18)",
     "category": "fotografia",
-    "image": "https://d2xsxph8kpxj0f.cloudfront.net/310519663468761794/e8xfFyW6dXJEFGQgKJqfmX/Sesión de Fotos(18)_8f4c2e7d.jpg",
+    "image": "https://d2xsxph8kpxj0f.cloudfront.net/310519663468761794/e8xfFyW6dXJEFGQgKJqfmX/Sesión%20de%20Fotos(18)_8f4c2e7d.jpg",
     "description": ""
   },
   {
@@ -397,7 +397,7 @@ export const portfolioItems: PortfolioItem[] = [
     "title": "Sesión de Fotos(19)",
     "alt": "Sesión de Fotos(19)",
     "category": "fotografia",
-    "image": "https://d2xsxph8kpxj0f.cloudfront.net/310519663468761794/e8xfFyW6dXJEFGQgKJqfmX/Sesión de Fotos(19)_3c7a1e9f.jpg",
+    "image": "https://d2xsxph8kpxj0f.cloudfront.net/310519663468761794/e8xfFyW6dXJEFGQgKJqfmX/Sesión%20de%20Fotos(19)_3c7a1e9f.jpg",
     "description": ""
   },
   {
@@ -405,7 +405,7 @@ export const portfolioItems: PortfolioItem[] = [
     "title": "Detrás de cámara _Verte Encima_",
     "alt": "Detrás de cámara _Verte Encima_",
     "category": "makeoff",
-    "image": "https://d2xsxph8kpxj0f.cloudfront.net/310519663468761794/e8xfFyW6dXJEFGQgKJqfmX/Detrás de cámara _Verte Encima__b1145525.jpg",
+    "image": "https://d2xsxph8kpxj0f.cloudfront.net/310519663468761794/e8xfFyW6dXJEFGQgKJqfmX/Detrás%20de%20cámara%20_Verte%20Encima__b1145525.jpg",
     "description": "",
     "featured": true
   },
@@ -414,7 +414,7 @@ export const portfolioItems: PortfolioItem[] = [
     "title": "Detrás de cámara _Verte Encima_(1)",
     "alt": "Detrás de cámara _Verte Encima_(1)",
     "category": "makeoff",
-    "image": "https://d2xsxph8kpxj0f.cloudfront.net/310519663468761794/e8xfFyW6dXJEFGQgKJqfmX/Detrás de cámara _Verte Encima_(1)_35e679b6.jpg",
+    "image": "https://d2xsxph8kpxj0f.cloudfront.net/310519663468761794/e8xfFyW6dXJEFGQgKJqfmX/Detrás%20de%20cámara%20_Verte%20Encima_(1)_35e679b6.jpg",
     "description": ""
   },
   {
@@ -422,7 +422,7 @@ export const portfolioItems: PortfolioItem[] = [
     "title": "Equipo de Arte",
     "alt": "Equipo de Arte",
     "category": "makeoff",
-    "image": "https://d2xsxph8kpxj0f.cloudfront.net/310519663468761794/e8xfFyW6dXJEFGQgKJqfmX/Equipo de Arte_a1cb4a15.jpg",
+    "image": "https://d2xsxph8kpxj0f.cloudfront.net/310519663468761794/e8xfFyW6dXJEFGQgKJqfmX/Equipo%20de%20Arte_a1cb4a15.jpg",
     "description": "",
     "featured": true
   },
@@ -431,7 +431,7 @@ export const portfolioItems: PortfolioItem[] = [
     "title": "Equipo iluminacion",
     "alt": "Equipo iluminacion",
     "category": "makeoff",
-    "image": "https://d2xsxph8kpxj0f.cloudfront.net/310519663468761794/e8xfFyW6dXJEFGQgKJqfmX/Equipo iluminacion_6f8c6b83.jpg",
+    "image": "https://d2xsxph8kpxj0f.cloudfront.net/310519663468761794/e8xfFyW6dXJEFGQgKJqfmX/Equipo%20iluminacion_6f8c6b83.jpg",
     "description": ""
   },
   {
@@ -439,7 +439,7 @@ export const portfolioItems: PortfolioItem[] = [
     "title": "Nuestro equipo",
     "alt": "Nuestro equipo",
     "category": "makeoff",
-    "image": "https://d2xsxph8kpxj0f.cloudfront.net/310519663468761794/e8xfFyW6dXJEFGQgKJqfmX/Nuestro equipo_57fbbd4f.jpg",
+    "image": "https://d2xsxph8kpxj0f.cloudfront.net/310519663468761794/e8xfFyW6dXJEFGQgKJqfmX/Nuestro%20equipo_57fbbd4f.jpg",
     "description": ""
   },
   {
@@ -447,7 +447,7 @@ export const portfolioItems: PortfolioItem[] = [
     "title": "Operador de Camara _Voy y Vuelvo_",
     "alt": "Operador de Camara _Voy y Vuelvo_",
     "category": "makeoff",
-    "image": "https://d2xsxph8kpxj0f.cloudfront.net/310519663468761794/e8xfFyW6dXJEFGQgKJqfmX/Operador de camara _Voy y Vuelvo__06a90e5d.jpg",
+    "image": "https://d2xsxph8kpxj0f.cloudfront.net/310519663468761794/e8xfFyW6dXJEFGQgKJqfmX/Operador%20de%20camara%20_Voy%20y%20Vuelvo__06a90e5d.jpg",
     "description": ""
   },
   {
@@ -455,7 +455,7 @@ export const portfolioItems: PortfolioItem[] = [
     "title": "Operador de Camara _Voy y Vuelvo_(1)",
     "alt": "Operador de Camara _Voy y Vuelvo_(1)",
     "category": "makeoff",
-    "image": "https://d2xsxph8kpxj0f.cloudfront.net/310519663468761794/e8xfFyW6dXJEFGQgKJqfmX/Operador de Camara _Voy y Vuelvo_(1)_e41ec5e5.jpg",
+    "image": "https://d2xsxph8kpxj0f.cloudfront.net/310519663468761794/e8xfFyW6dXJEFGQgKJqfmX/Operador%20de%20Camara%20_Voy%20y%20Vuelvo_(1)_e41ec5e5.jpg",
     "description": ""
   },
   {
@@ -463,7 +463,7 @@ export const portfolioItems: PortfolioItem[] = [
     "title": "Prueba de Iluminacion",
     "alt": "Prueba de Iluminacion",
     "category": "makeoff",
-    "image": "https://d2xsxph8kpxj0f.cloudfront.net/310519663468761794/e8xfFyW6dXJEFGQgKJqfmX/Prueba de Iluminacion_a8a131e4.jpg",
+    "image": "https://d2xsxph8kpxj0f.cloudfront.net/310519663468761794/e8xfFyW6dXJEFGQgKJqfmX/Prueba%20de%20Iluminacion_a8a131e4.jpg",
     "description": ""
   },
   {
@@ -471,7 +471,7 @@ export const portfolioItems: PortfolioItem[] = [
     "title": "Prueba de Iluminacion(1)",
     "alt": "Prueba de Iluminacion(1)",
     "category": "makeoff",
-    "image": "https://d2xsxph8kpxj0f.cloudfront.net/310519663468761794/e8xfFyW6dXJEFGQgKJqfmX/Prueba de Iluminacion(1)_0764c211.jpg",
+    "image": "https://d2xsxph8kpxj0f.cloudfront.net/310519663468761794/e8xfFyW6dXJEFGQgKJqfmX/Prueba%20de%20Iluminacion(1)_0764c211.jpg",
     "description": ""
   },
   {
@@ -479,7 +479,7 @@ export const portfolioItems: PortfolioItem[] = [
     "title": "Detrás de Cámara _Voy y Vuelvo_",
     "alt": "Detrás de Cámara _Voy y Vuelvo_",
     "category": "makeoff",
-    "image": "https://d2xsxph8kpxj0f.cloudfront.net/310519663468761794/e8xfFyW6dXJEFGQgKJqfmX/Detrás de Cámara _Voy y Vuelvo__e362e07b.jpg",
+    "image": "https://d2xsxph8kpxj0f.cloudfront.net/310519663468761794/e8xfFyW6dXJEFGQgKJqfmX/Detrás%20de%20Cámara%20_Voy%20y%20Vuelvo__e362e07b.jpg",
     "description": ""
   }
 ];
