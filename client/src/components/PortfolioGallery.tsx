@@ -21,9 +21,34 @@ export default function PortfolioGallery() {
     { id: 'makeoff', label: 'Make Off' }
   ];
 
+  // Reorganizar items para distribuir featured de forma dinámica
+  const getReorderedItems = (items: PortfolioItem[]) => {
+    const featured = items.filter(item => item.featured);
+    const normal = items.filter(item => !item.featured);
+    
+    if (featured.length === 0) return items;
+    
+    const reordered: PortfolioItem[] = [];
+    const interval = Math.ceil(normal.length / featured.length);
+    let normalIdx = 0;
+    let featuredIdx = 0;
+    
+    for (let i = 0; i < items.length; i++) {
+      if (i % (interval + 1) === interval && featuredIdx < featured.length) {
+        reordered.push(featured[featuredIdx++]);
+      } else if (normalIdx < normal.length) {
+        reordered.push(normal[normalIdx++]);
+      } else if (featuredIdx < featured.length) {
+        reordered.push(featured[featuredIdx++]);
+      }
+    }
+    
+    return reordered;
+  };
+
   const filteredItems = activeCategory === 'all'
-    ? portfolioItems
-    : portfolioItems.filter(item => item.category === activeCategory);
+    ? getReorderedItems(portfolioItems)
+    : getReorderedItems(portfolioItems.filter(item => item.category === activeCategory));
 
   const handleImageClick = (item: PortfolioItem, event: React.MouseEvent) => {
     const rect = (event.currentTarget as HTMLElement).getBoundingClientRect();
@@ -95,7 +120,7 @@ export default function PortfolioGallery() {
             gridTemplateColumns: 'repeat(auto-fill, minmax(250px, 1fr))',
             gap: '1.5rem',
             gridAutoRows: '250px',
-            gridAutoFlow: 'dense'
+            gridAutoFlow: 'row'
           }}
         >
           {filteredItems.map((item, index) => {
