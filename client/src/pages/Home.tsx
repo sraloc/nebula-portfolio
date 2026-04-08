@@ -71,7 +71,7 @@ export default function Home() {
                   </a>
                 </li>
                 <li>
-                  <a href="https://sraloc.github.io/nebulaweb/#portafolio" className="transition-colors text-sm" style={{ color: '#A1A1AA', fontFamily: "'Inter', system-ui, -apple-system, sans-serif" }} onMouseEnter={(e) => e.currentTarget.style.color = '#D946EF'} onMouseLeave={(e) => e.currentTarget.style.color = '#A1A1AA'}>
+                  <a href="#" onClick={(e) => { e.preventDefault(); window.scrollTo(0, 0); }} className="transition-colors text-sm" style={{ color: '#A1A1AA', fontFamily: "'Inter', system-ui, -apple-system, sans-serif" }} onMouseEnter={(e) => e.currentTarget.style.color = '#D946EF'} onMouseLeave={(e) => e.currentTarget.style.color = '#A1A1AA'}>
                     Portafolio Completo
                   </a>
                 </li>
