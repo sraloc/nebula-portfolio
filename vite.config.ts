@@ -180,11 +180,7 @@ export default defineConfig({
       "localhost",
       "127.0.0.1",
     ],
-    hmr: {
-      protocol: "wss",
-      host: process.env.VITE_HMR_HOST || "localhost",
-      port: process.env.VITE_HMR_PORT ? parseInt(process.env.VITE_HMR_PORT) : 443,
-    },
+    hmr: process.env.NODE_ENV === "production" ? false : undefined,
     fs: {
       strict: true,
       deny: ["**/..*"],
