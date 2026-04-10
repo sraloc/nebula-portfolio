@@ -120,7 +120,7 @@ export default function PortfolioGallery() {
             gridTemplateColumns: 'repeat(auto-fill, minmax(250px, 1fr))',
             gap: '1.5rem',
             gridAutoRows: '250px',
-            gridAutoFlow: 'row'
+            gridAutoFlow: 'dense'
           }}
         >
           {filteredItems.map((item, index) => {
