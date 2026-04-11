@@ -2,7 +2,7 @@ export interface PortfolioItem {
   id: number;
   title: string;
   alt: string;
-  category: 'stills' | 'fotografia' | 'makeoff';
+  category: 'videoclips' | 'fotografia' | 'makeoff';
   image: string;
   description?: string;
   featured?: boolean;
@@ -12,30 +12,30 @@ export interface PortfolioItem {
 const featuredTitles = ['Gangrena', 'Verte Encima', 'Registro DJ La Feria', 'Sesión de Fotos(5)', 'Equipo de Arte', 'Detrás de cámara _Verte Encima_'];
 
 export const portfolioItems: PortfolioItem[] = [
-  {"id": 0, "title": "Gangrena", "alt": "Gangrena", "category": "stills", "image": "https://d2xsxph8kpxj0f.cloudfront.net/310519663468761794/e8xfFyW6dXJEFGQgKJqfmX/Gangrena_caacdf96.jpg", "description": "", "featured": true},
-  {"id": 1, "title": "Gangrena(1)", "alt": "Gangrena(1)", "category": "stills", "image": "https://d2xsxph8kpxj0f.cloudfront.net/310519663468761794/e8xfFyW6dXJEFGQgKJqfmX/Gangrena(1)_ef755613.jpg", "description": ""},
-  {"id": 2, "title": "Gangrena(2)", "alt": "Gangrena(2)", "category": "stills", "image": "https://d2xsxph8kpxj0f.cloudfront.net/310519663468761794/e8xfFyW6dXJEFGQgKJqfmX/Gangrena(2)_be9623f6.jpg", "description": ""},
-  {"id": 3, "title": "Gangrena(3)", "alt": "Gangrena(3)", "category": "stills", "image": "https://d2xsxph8kpxj0f.cloudfront.net/310519663468761794/e8xfFyW6dXJEFGQgKJqfmX/Gangrena(3)_a229d670.jpg", "description": ""},
-  {"id": 4, "title": "Gangrena(4)", "alt": "Gangrena(4)", "category": "stills", "image": "https://d2xsxph8kpxj0f.cloudfront.net/310519663468761794/e8xfFyW6dXJEFGQgKJqfmX/Gangrena(4)_6786ed6f.jpg", "description": ""},
-  {"id": 5, "title": "Gangrena(5)", "alt": "Gangrena(5)", "category": "stills", "image": "https://d2xsxph8kpxj0f.cloudfront.net/310519663468761794/e8xfFyW6dXJEFGQgKJqfmX/Gangrena(5)_20c60440.jpg", "description": ""},
-  {"id": 6, "title": "Gangrena(6)", "alt": "Gangrena(6)", "category": "stills", "image": "https://d2xsxph8kpxj0f.cloudfront.net/310519663468761794/e8xfFyW6dXJEFGQgKJqfmX/Gangrena(6)_9e4267c1.jpg", "description": ""},
-  {"id": 7, "title": "Gangrena(7)", "alt": "Gangrena(7)", "category": "stills", "image": "https://d2xsxph8kpxj0f.cloudfront.net/310519663468761794/e8xfFyW6dXJEFGQgKJqfmX/Gangrena(7)_b7a45a4d.jpg", "description": ""},
-  {"id": 8, "title": "Gangrena(8)", "alt": "Gangrena(8)", "category": "stills", "image": "https://d2xsxph8kpxj0f.cloudfront.net/310519663468761794/e8xfFyW6dXJEFGQgKJqfmX/Gangrena(8)_3f896b8b.jpg", "description": ""},
-  {"id": 9, "title": "Gangrena(9)", "alt": "Gangrena(9)", "category": "stills", "image": "https://d2xsxph8kpxj0f.cloudfront.net/310519663468761794/e8xfFyW6dXJEFGQgKJqfmX/Gangrena(9)_52ecd814.jpg", "description": ""},
-  {"id": 10, "title": "Gangrena(10)", "alt": "Gangrena(10)", "category": "stills", "image": "https://d2xsxph8kpxj0f.cloudfront.net/310519663468761794/e8xfFyW6dXJEFGQgKJqfmX/Gangrena(10)_6e5374b7.jpg", "description": ""},
-  {"id": 11, "title": "Gangrena(11)", "alt": "Gangrena(11)", "category": "stills", "image": "https://d2xsxph8kpxj0f.cloudfront.net/310519663468761794/e8xfFyW6dXJEFGQgKJqfmX/Gangrena(11)_e2560c1d.jpg", "description": ""},
-  {"id": 12, "title": "Gangrena(12)", "alt": "Gangrena(12)", "category": "stills", "image": "https://d2xsxph8kpxj0f.cloudfront.net/310519663468761794/e8xfFyW6dXJEFGQgKJqfmX/Gangrena(12)_dd5a2066.jpg", "description": ""},
-  {"id": 13, "title": "Gangrena(13)", "alt": "Gangrena(13)", "category": "stills", "image": "https://d2xsxph8kpxj0f.cloudfront.net/310519663468761794/e8xfFyW6dXJEFGQgKJqfmX/Gangrena(13)_e3b245df.jpg", "description": ""},
-  {"id": 14, "title": "Verte Encima", "alt": "Verte Encima", "category": "stills", "image": "https://d2xsxph8kpxj0f.cloudfront.net/310519663468761794/e8xfFyW6dXJEFGQgKJqfmX/Verte%20Encima_47cb45a7.jpg", "description": "", "featured": true},
-  {"id": 15, "title": "Verte Encima(1)", "alt": "Verte Encima(1)", "category": "stills", "image": "https://d2xsxph8kpxj0f.cloudfront.net/310519663468761794/e8xfFyW6dXJEFGQgKJqfmX/Verte%20Encima(1)_a9e7ef9f.jpg", "description": ""},
-  {"id": 16, "title": "Verte Encima(2)", "alt": "Verte Encima(2)", "category": "stills", "image": "https://d2xsxph8kpxj0f.cloudfront.net/310519663468761794/e8xfFyW6dXJEFGQgKJqfmX/Verte%20Encima(2)_cbd6cd58.jpg", "description": ""},
-  {"id": 17, "title": "Verte Encima(3)", "alt": "Verte Encima(3)", "category": "stills", "image": "https://d2xsxph8kpxj0f.cloudfront.net/310519663468761794/e8xfFyW6dXJEFGQgKJqfmX/Verte%20Encima(3)_3fa5c18e.jpg", "description": ""},
-  {"id": 18, "title": "Volver pa atras", "alt": "Volver pa atras", "category": "stills", "image": "https://d2xsxph8kpxj0f.cloudfront.net/310519663468761794/e8xfFyW6dXJEFGQgKJqfmX/Volver%20pa%20atras_6f00cbbf.jpg", "description": ""},
-  {"id": 19, "title": "Volver pa atras(1)", "alt": "Volver pa atras(1)", "category": "stills", "image": "https://d2xsxph8kpxj0f.cloudfront.net/310519663468761794/e8xfFyW6dXJEFGQgKJqfmX/Volver%20pa%20atras(1)_3ff13338.jpg", "description": ""},
-  {"id": 20, "title": "Volver pa atras(2)", "alt": "Volver pa atras(2)", "category": "stills", "image": "https://d2xsxph8kpxj0f.cloudfront.net/310519663468761794/e8xfFyW6dXJEFGQgKJqfmX/Volver%20pa%20atras(2)_dfcd4e75.jpg", "description": ""},
-  {"id": 21, "title": "Volver pa atras(3)", "alt": "Volver pa atras(3)", "category": "stills", "image": "https://d2xsxph8kpxj0f.cloudfront.net/310519663468761794/e8xfFyW6dXJEFGQgKJqfmX/Volver%20pa%20atras(3)_552cc71f.jpg", "description": ""},
-  {"id": 22, "title": "Voy y Vuelvo", "alt": "Voy y Vuelvo", "category": "stills", "image": "https://d2xsxph8kpxj0f.cloudfront.net/310519663468761794/e8xfFyW6dXJEFGQgKJqfmX/Voy%20y%20Vuelvo%201_2ba4edbd.JPG", "description": ""},
-  {"id": 23, "title": "Voy y Vuelvo", "alt": "Voy y Vuelvo", "category": "stills", "image": "https://d2xsxph8kpxj0f.cloudfront.net/310519663468761794/e8xfFyW6dXJEFGQgKJqfmX/VoyyVuelvo2_3bdbfde4.JPG", "description": ""},
+  {"id": 0, "title": "Gangrena", "alt": "Gangrena", "category": "videoclips", "image": "https://d2xsxph8kpxj0f.cloudfront.net/310519663468761794/e8xfFyW6dXJEFGQgKJqfmX/Gangrena_caacdf96.jpg", "description": "", "featured": true},
+  {"id": 1, "title": "Gangrena(1)", "alt": "Gangrena(1)", "category": "videoclips", "image": "https://d2xsxph8kpxj0f.cloudfront.net/310519663468761794/e8xfFyW6dXJEFGQgKJqfmX/Gangrena(1)_ef755613.jpg", "description": ""},
+  {"id": 2, "title": "Gangrena(2)", "alt": "Gangrena(2)", "category": "videoclips", "image": "https://d2xsxph8kpxj0f.cloudfront.net/310519663468761794/e8xfFyW6dXJEFGQgKJqfmX/Gangrena(2)_be9623f6.jpg", "description": ""},
+  {"id": 3, "title": "Gangrena(3)", "alt": "Gangrena(3)", "category": "videoclips", "image": "https://d2xsxph8kpxj0f.cloudfront.net/310519663468761794/e8xfFyW6dXJEFGQgKJqfmX/Gangrena(3)_a229d670.jpg", "description": ""},
+  {"id": 4, "title": "Gangrena(4)", "alt": "Gangrena(4)", "category": "videoclips", "image": "https://d2xsxph8kpxj0f.cloudfront.net/310519663468761794/e8xfFyW6dXJEFGQgKJqfmX/Gangrena(4)_6786ed6f.jpg", "description": ""},
+  {"id": 5, "title": "Gangrena(5)", "alt": "Gangrena(5)", "category": "videoclips", "image": "https://d2xsxph8kpxj0f.cloudfront.net/310519663468761794/e8xfFyW6dXJEFGQgKJqfmX/Gangrena(5)_20c60440.jpg", "description": ""},
+  {"id": 6, "title": "Gangrena(6)", "alt": "Gangrena(6)", "category": "videoclips", "image": "https://d2xsxph8kpxj0f.cloudfront.net/310519663468761794/e8xfFyW6dXJEFGQgKJqfmX/Gangrena(6)_9e4267c1.jpg", "description": ""},
+  {"id": 7, "title": "Gangrena(7)", "alt": "Gangrena(7)", "category": "videoclips", "image": "https://d2xsxph8kpxj0f.cloudfront.net/310519663468761794/e8xfFyW6dXJEFGQgKJqfmX/Gangrena(7)_b7a45a4d.jpg", "description": ""},
+  {"id": 8, "title": "Gangrena(8)", "alt": "Gangrena(8)", "category": "videoclips", "image": "https://d2xsxph8kpxj0f.cloudfront.net/310519663468761794/e8xfFyW6dXJEFGQgKJqfmX/Gangrena(8)_3f896b8b.jpg", "description": ""},
+  {"id": 9, "title": "Gangrena(9)", "alt": "Gangrena(9)", "category": "videoclips", "image": "https://d2xsxph8kpxj0f.cloudfront.net/310519663468761794/e8xfFyW6dXJEFGQgKJqfmX/Gangrena(9)_52ecd814.jpg", "description": ""},
+  {"id": 10, "title": "Gangrena(10)", "alt": "Gangrena(10)", "category": "videoclips", "image": "https://d2xsxph8kpxj0f.cloudfront.net/310519663468761794/e8xfFyW6dXJEFGQgKJqfmX/Gangrena(10)_6e5374b7.jpg", "description": ""},
+  {"id": 11, "title": "Gangrena(11)", "alt": "Gangrena(11)", "category": "videoclips", "image": "https://d2xsxph8kpxj0f.cloudfront.net/310519663468761794/e8xfFyW6dXJEFGQgKJqfmX/Gangrena(11)_e2560c1d.jpg", "description": ""},
+  {"id": 12, "title": "Gangrena(12)", "alt": "Gangrena(12)", "category": "videoclips", "image": "https://d2xsxph8kpxj0f.cloudfront.net/310519663468761794/e8xfFyW6dXJEFGQgKJqfmX/Gangrena(12)_dd5a2066.jpg", "description": ""},
+  {"id": 13, "title": "Gangrena(13)", "alt": "Gangrena(13)", "category": "videoclips", "image": "https://d2xsxph8kpxj0f.cloudfront.net/310519663468761794/e8xfFyW6dXJEFGQgKJqfmX/Gangrena(13)_e3b245df.jpg", "description": ""},
+  {"id": 14, "title": "Verte Encima", "alt": "Verte Encima", "category": "videoclips", "image": "https://d2xsxph8kpxj0f.cloudfront.net/310519663468761794/e8xfFyW6dXJEFGQgKJqfmX/Verte%20Encima_47cb45a7.jpg", "description": "", "featured": true},
+  {"id": 15, "title": "Verte Encima(1)", "alt": "Verte Encima(1)", "category": "videoclips", "image": "https://d2xsxph8kpxj0f.cloudfront.net/310519663468761794/e8xfFyW6dXJEFGQgKJqfmX/Verte%20Encima(1)_a9e7ef9f.jpg", "description": ""},
+  {"id": 16, "title": "Verte Encima(2)", "alt": "Verte Encima(2)", "category": "videoclips", "image": "https://d2xsxph8kpxj0f.cloudfront.net/310519663468761794/e8xfFyW6dXJEFGQgKJqfmX/Verte%20Encima(2)_cbd6cd58.jpg", "description": ""},
+  {"id": 17, "title": "Verte Encima(3)", "alt": "Verte Encima(3)", "category": "videoclips", "image": "https://d2xsxph8kpxj0f.cloudfront.net/310519663468761794/e8xfFyW6dXJEFGQgKJqfmX/Verte%20Encima(3)_3fa5c18e.jpg", "description": ""},
+  {"id": 18, "title": "Volver pa atras", "alt": "Volver pa atras", "category": "videoclips", "image": "https://d2xsxph8kpxj0f.cloudfront.net/310519663468761794/e8xfFyW6dXJEFGQgKJqfmX/Volver%20pa%20atras_6f00cbbf.jpg", "description": ""},
+  {"id": 19, "title": "Volver pa atras(1)", "alt": "Volver pa atras(1)", "category": "videoclips", "image": "https://d2xsxph8kpxj0f.cloudfront.net/310519663468761794/e8xfFyW6dXJEFGQgKJqfmX/Volver%20pa%20atras(1)_3ff13338.jpg", "description": ""},
+  {"id": 20, "title": "Volver pa atras(2)", "alt": "Volver pa atras(2)", "category": "videoclips", "image": "https://d2xsxph8kpxj0f.cloudfront.net/310519663468761794/e8xfFyW6dXJEFGQgKJqfmX/Volver%20pa%20atras(2)_dfcd4e75.jpg", "description": ""},
+  {"id": 21, "title": "Volver pa atras(3)", "alt": "Volver pa atras(3)", "category": "videoclips", "image": "https://d2xsxph8kpxj0f.cloudfront.net/310519663468761794/e8xfFyW6dXJEFGQgKJqfmX/Volver%20pa%20atras(3)_552cc71f.jpg", "description": ""},
+  {"id": 22, "title": "Voy y Vuelvo", "alt": "Voy y Vuelvo", "category": "videoclips", "image": "https://d2xsxph8kpxj0f.cloudfront.net/310519663468761794/e8xfFyW6dXJEFGQgKJqfmX/Voy%20y%20Vuelvo%201_2ba4edbd.JPG", "description": ""},
+  {"id": 23, "title": "Voy y Vuelvo", "alt": "Voy y Vuelvo", "category": "videoclips", "image": "https://d2xsxph8kpxj0f.cloudfront.net/310519663468761794/e8xfFyW6dXJEFGQgKJqfmX/VoyyVuelvo2_3bdbfde4.JPG", "description": ""},
   {"id": 24, "title": "Paisajismo", "alt": "Paisajismo", "category": "fotografia", "image": "https://d2xsxph8kpxj0f.cloudfront.net/310519663468761794/e8xfFyW6dXJEFGQgKJqfmX/Paisajismo%201_d8c0ffdd.JPG", "description": ""},
   {"id": 25, "title": "Paisajismo", "alt": "Paisajismo", "category": "fotografia", "image": "https://d2xsxph8kpxj0f.cloudfront.net/310519663468761794/e8xfFyW6dXJEFGQgKJqfmX/Paisajismo%202_a8dff5dd.JPG", "description": ""},
   {"id": 26, "title": "Registro DJ La Feria", "alt": "Registro DJ La Feria", "category": "fotografia", "image": "https://d2xsxph8kpxj0f.cloudfront.net/310519663468761794/e8xfFyW6dXJEFGQgKJqfmX/Registro%20DJ%20La%20Feria%201_f9c6df28.jpg", "description": "", "featured": true},
@@ -85,7 +85,7 @@ export const portfolioItems: PortfolioItem[] = [
 
 export function getCategoryLabel(category: string): string {
   const labels: Record<string, string> = {
-    stills: 'Stills',
+    videoclips: 'Videoclips',
     fotografia: 'Fotografía',
     makeoff: 'Make Off'
   };
