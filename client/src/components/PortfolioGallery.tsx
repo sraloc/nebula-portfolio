@@ -16,7 +16,7 @@ export default function PortfolioGallery() {
 
   const categories = [
     { id: 'all', label: 'Todos' },
-    { id: 'videoclips', label: 'Videoclips' },
+    { id: 'videoclips', label: 'Videoclip' },
     { id: 'fotografia', label: 'Fotografía' },
     { id: 'makeoff', label: 'Make Off' }
   ];

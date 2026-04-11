@@ -85,7 +85,7 @@ export const portfolioItems: PortfolioItem[] = [
 
 export function getCategoryLabel(category: string): string {
   const labels: Record<string, string> = {
-    videoclips: 'Videoclips',
+    videoclips: 'Videoclip',
     fotografia: 'Fotografía',
     makeoff: 'Make Off'
   };
